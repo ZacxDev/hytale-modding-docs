@@ -55,9 +55,19 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 
 ---
 
+### Advanced Topics
+
+11. **[Advanced Plugin Patterns](12-advanced-plugin-patterns.md)**  
+    Professional architecture patterns including Service-Storage pattern, thread pools, event systems, and more.
+
+12. **[Gradle Automation & Testing](13-gradle-automation-testing.md)**  
+    Custom Gradle plugins for automated server testing and streamlined development workflows.
+
+---
+
 ### Resources & Tools
 
-11. **[Useful Tools & Links](10-useful-tools-and-links.md)**  
+13. **[Useful Tools & Links](10-useful-tools-and-links.md)**  
     Essential tools, community resources, and development utilities for Hytale modding.
 
 ---
@@ -84,8 +94,11 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 **Creating Plugins:**
 1. Read [Hytale Modding Overview](01-hytale-modding-overview.md)
 2. Follow [Getting Started with Plugins](07-getting-started-with-plugins.md)
-3. Learn [Custom Config Files](08-custom-config-files.md)
-4. Only if needed: [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
+3. Study [Example Command: Show Title](11-example-command-show-title.md)
+4. Learn [Custom Config Files](08-custom-config-files.md)
+5. Master [Advanced Plugin Patterns](12-advanced-plugin-patterns.md)
+6. Automate with [Gradle Automation & Testing](13-gradle-automation-testing.md)
+7. Only if needed: [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
 
 **Required Tools:**
 - IntelliJ IDEA

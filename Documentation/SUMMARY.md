@@ -23,6 +23,11 @@
 * [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
 * [Example Command to Show Title](11-example-command-show-title.md)
 
+## Advanced Topics
+
+* [Advanced Plugin Patterns](12-advanced-plugin-patterns.md)
+* [Gradle Automation & Testing](13-gradle-automation-testing.md)
+
 ## Resources & Tools
 
 * [Useful Tools & Links](10-useful-tools-and-links.md)

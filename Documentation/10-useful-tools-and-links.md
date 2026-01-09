@@ -115,6 +115,31 @@ Build automation tool used for compiling and packaging Hytale plugins.
 
 ---
 
+### Custom Gradle Plugin for Server Testing
+
+**Documentation:** [Gradle Automation & Testing](13-gradle-automation-testing.md)
+
+**Description:**  
+Custom Gradle plugin that automates the entire development workflow: build, deploy, and test your plugin on a Hytale server with a single command.
+
+**Features:**
+- Automatic server JAR download and caching
+- Compiles and deploys your plugin automatically
+- Starts server with interactive console
+- One-command workflow: `./gradlew runServer`
+- Saves hours of manual testing time
+
+**Use Cases:**
+- Rapid plugin development and testing
+- Automated CI/CD pipelines
+- Multi-version server testing
+- Remote debugging support
+
+**Learn More:**  
+See the complete implementation guide in [Gradle Automation & Testing](13-gradle-automation-testing.md).
+
+---
+
 ## Graphics & Design Tools
 
 ### Paint.NET
@@ -335,6 +360,7 @@ Project management boards.
 | Blockbench | 3D Modeling | [blockbench.net](https://www.blockbench.net) | Free |
 | IntelliJ IDEA | IDE | [jetbreans.com/idea](https://www.jetbrains.com/idea/) | Free/Paid |
 | Java 25 JDK | Runtime | [oracle.com/java](https://www.oracle.com/java/) | Free |
+| Gradle Server Plugin | Testing Automation | [See Guide](13-gradle-automation-testing.md) | Free |
 | Paint.NET | Textures | [getpaint.net](https://www.getpaint.net/) | Free |
 | GIMP | Textures | [gimp.org](https://www.gimp.org/) | Free |
 | Git | Version Control | [git-scm.com](https://git-scm.com/) | Free |
@@ -397,6 +423,12 @@ This page will be updated as new tools and resources become available. Check bac
 2. **Paint.NET or GIMP** - For textures
 3. **Text Editor** - For JSON files
 4. **IntelliJ IDEA** - For plugins (if coding)
+
+### Essential Tools for Plugin Developers:
+1. **IntelliJ IDEA** - Java IDE
+2. **Java 25 JDK** - Required runtime
+3. **Gradle** - Build automation (included in templates)
+4. **Custom Gradle Server Plugin** - Automated testing (see [guide](13-gradle-automation-testing.md))
 
 ### Essential Resources:
 1. **Community Forums** - Community help and discussions
