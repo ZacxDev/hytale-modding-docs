@@ -149,21 +149,21 @@ If you haven't already added Java 25 as an SDK:
 
 ```
 your-plugin-name/
-–”œ–”€–”€ src/
-–”‚   –””–”€–”€ main/
-–”‚       –”œ–”€–”€ java/
-–”‚       –”‚   –””–”€–”€ com/
-–”‚       –”‚       –””–”€–”€ yourname/
-–”‚       –”‚           –””–”€–”€ yourplugin/
-–”‚       –”‚               –””–”€–”€ YourPlugin.java
-–”‚       –””–”€–”€ resources/
-–”‚           –”œ–”€–”€ manifest.json
-–”‚           –”œ–”€–”€ Common/          # Assets (models, textures)
-–”‚           –””–”€–”€ Server/          # Server-side data
-–”œ–”€–”€ build.gradle
-–”œ–”€–”€ settings.gradle
-–”œ–”€–”€ gradle.properties
-–””–”€–”€ README.md
+|-- src/
+|   `-- main/
+|       |-- java/
+|       |   `-- com/
+|       |       `-- yourname/
+|       |           `-- yourplugin/
+|       |               `-- YourPlugin.java
+|       `-- resources/
+|           |-- manifest.json
+|           |-- Common/          # Assets (models, textures)
+|           `-- Server/          # Server-side data
+|-- build.gradle
+|-- settings.gradle
+|-- gradle.properties
+`-- README.md
 ```
 
 ---
@@ -363,10 +363,15 @@ After setting up your plugin development environment:
 - **Hytale Modding Wiki:** (Link TBC)
 - **Community Discord:** Get community help
 
+### Plugin Template:
+- **Hytale Plugin Template:** [https://github.com/realBritakee/hytale-template-plugin](https://github.com/realBritakee/hytale-template-plugin)  
+  Ready-to-use template with modern build tools, automated testing, and CI/CD
+
 ### Related Tutorials:
-- Custom Config Files
-- Bootstrap/Early Plugins
-- Useful Tools & Links
+- [Plugin Project Template](15-plugin-project-template.md)
+- [Custom Config Files](08-custom-config-files.md)
+- [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
+- [Useful Tools & Links](10-useful-tools-and-links.md)
 
 ---
 

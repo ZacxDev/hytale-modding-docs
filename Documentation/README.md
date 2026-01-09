@@ -18,12 +18,12 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 1. **[Hytale Modding Overview](01-hytale-modding-overview.md)**  
    Introduction to Hytale modding, mod types (Packs, Plugins, Early Plugins), and Creation Tools.
 
-2. **[Getting Started with Packs](02-getting-started-with-packs.md)**  
-   How to create your first Pack: folder structure, manifest file, and basic setup.
-
 ---
 
 ### Packs - Content Creation
+
+2. **[Getting Started with Packs](02-getting-started-with-packs.md)**  
+   How to create your first Pack: folder structure, manifest file, and basic setup.
 
 3. **[Adding a Block](03-adding-a-block.md)**  
    Complete guide to creating custom blocks with textures, properties, and Asset Editor usage.
@@ -41,21 +41,23 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 
 ### Plugins - Java Development
 
-7. **[Getting Started with Plugins](07-getting-started-with-plugins.md)**  
-   Setting up IntelliJ IDEA, downloading the template, and creating your first Java plugin.
+#### Getting Started
 
-8. **[Custom Config Files](08-custom-config-files.md)**  
+7. **[Getting Started with Plugins](07-getting-started-with-plugins.md)**  
+   Setting up IntelliJ IDEA, understanding plugin structure, and creating your first Java plugin.
+
+8. **[Example Command to Show Title](11-example-command-show-title.md)**  
+   Example plugin command that displays titles to players in-game.
+
+#### Core Features
+
+9. **[Custom Config Files](08-custom-config-files.md)**  
    Creating and registering configuration files using Hytale's Codec system.
 
-9. **[Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)**  
-   Advanced: Low-level modifications using class transformers (use only when necessary).
+10. **[Common Plugin Features](14-common-plugin-features.md)**  
+    Practical implementations of placeholders, translations, utilities, first join detection, and chat channels.
 
-10. **[Example Command to Show Title](11-example-command-show-title.md)**  
-    Example plugin command that displays titles to players in-game.
-
----
-
-### Advanced Topics
+#### Advanced Development
 
 11. **[Advanced Plugin Patterns](12-advanced-plugin-patterns.md)**  
     Professional architecture patterns including Service-Storage pattern, thread pools, event systems, and more.
@@ -63,11 +65,19 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 12. **[Gradle Automation & Testing](13-gradle-automation-testing.md)**  
     Custom Gradle plugins for automated server testing and streamlined development workflows.
 
+13. **[Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)**  
+    Advanced: Low-level modifications using class transformers (use only when absolutely necessary).
+
+#### Project Templates
+
+14. **[Plugin Project Template](15-plugin-project-template.md)** ⭐  
+    Ready-to-use plugin template with modern build tools, automated testing, and CI/CD. Build immediately without any changes!
+
 ---
 
 ### Resources & Tools
 
-13. **[Useful Tools & Links](10-useful-tools-and-links.md)**  
+15. **[Useful Tools & Links](10-useful-tools-and-links.md)**  
     Essential tools, community resources, and development utilities for Hytale modding.
 
 ---
@@ -93,17 +103,26 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 
 **Creating Plugins:**
 1. Read [Hytale Modding Overview](01-hytale-modding-overview.md)
-2. Follow [Getting Started with Plugins](07-getting-started-with-plugins.md)
-3. Study [Example Command: Show Title](11-example-command-show-title.md)
-4. Learn [Custom Config Files](08-custom-config-files.md)
-5. Master [Advanced Plugin Patterns](12-advanced-plugin-patterns.md)
-6. Automate with [Gradle Automation & Testing](13-gradle-automation-testing.md)
-7. Only if needed: [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
+2. **Clone the [Plugin Project Template](15-plugin-project-template.md)** - Start with a working project!
+3. Follow [Getting Started with Plugins](07-getting-started-with-plugins.md)
+4. Study [Example Command: Show Title](11-example-command-show-title.md)
+5. Learn [Custom Config Files](08-custom-config-files.md)
+6. Implement [Common Plugin Features](14-common-plugin-features.md)
+7. Master [Advanced Plugin Patterns](12-advanced-plugin-patterns.md)
+8. Automate with [Gradle Automation & Testing](13-gradle-automation-testing.md)
+9. Only if needed: [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
 
 **Required Tools:**
 - IntelliJ IDEA
 - Java 25 JDK
 - Gradle (included in template)
+
+**Quick Start:**
+```bash
+git clone https://github.com/realBritakee/hytale-template-plugin.git
+cd hytale-template-plugin
+./gradlew shadowJar  # Builds immediately!
+```
 
 ---
 

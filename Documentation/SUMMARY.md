@@ -7,10 +7,10 @@
 ## Getting Started
 
 * [Hytale Modding Overview](01-hytale-modding-overview.md)
-* [Getting Started with Packs](02-getting-started-with-packs.md)
 
 ## Packs - Content Creation
 
+* [Getting Started with Packs](02-getting-started-with-packs.md)
 * [Adding a Block](03-adding-a-block.md)
 * [Block State Changing](04-block-state-changing.md)
 * [Item Categories](05-item-categories.md)
@@ -18,15 +18,25 @@
 
 ## Plugins - Java Development
 
+### Getting Started
+
 * [Getting Started with Plugins](07-getting-started-with-plugins.md)
-* [Custom Config Files](08-custom-config-files.md)
-* [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
 * [Example Command to Show Title](11-example-command-show-title.md)
 
-## Advanced Topics
+### Core Features
+
+* [Custom Config Files](08-custom-config-files.md)
+* [Common Plugin Features](14-common-plugin-features.md)
+
+### Advanced Development
 
 * [Advanced Plugin Patterns](12-advanced-plugin-patterns.md)
 * [Gradle Automation & Testing](13-gradle-automation-testing.md)
+* [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
+
+### Project Templates
+
+* [Plugin Project Template](15-plugin-project-template.md)
 
 ## Resources & Tools
 
