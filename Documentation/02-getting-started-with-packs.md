@@ -151,4 +151,4 @@ Thank you to **Sketch Macaw** for creating this tutorial.
 
 ---
 
-*This documentation is part of the official Community Hytale modding tutorial series.*
+

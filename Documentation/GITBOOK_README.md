@@ -1,6 +1,6 @@
 ﻿# GitBook Setup Instructions
 
-## ✅ GitBook Compatibility
+##  GitBook Compatibility
 
 Your Hytale Modding documentation is now **fully compatible** with GitBook! Here's what was added:
 
@@ -65,27 +65,27 @@ Your Hytale Modding documentation is now **fully compatible** with GitBook! Here
 ## GitBook Features Enabled
 
 ### Navigation
-- ✅ Sidebar navigation (from SUMMARY.md)
-- ✅ Expandable chapters
-- ✅ Back to top button
-- ✅ Previous/Next page links
+-  Sidebar navigation (from SUMMARY.md)
+-  Expandable chapters
+-  Back to top button
+-  Previous/Next page links
 
 ### Search
-- ✅ Enhanced search (search-pro plugin)
-- ✅ Full-text search across all pages
+-  Enhanced search (search-pro plugin)
+-  Full-text search across all pages
 
 ### Code Highlighting
-- ✅ Syntax highlighting for Java, JSON, Bash
-- ✅ Prism.js for better code rendering
+-  Syntax highlighting for Java, JSON, Bash
+-  Prism.js for better code rendering
 
 ### GitHub Integration
-- ✅ "Edit on GitHub" links on each page
-- ✅ GitHub repository link in sidebar
+-  "Edit on GitHub" links on each page
+-  GitHub repository link in sidebar
 
 ### Additional Features
-- ✅ Anchor links on headings
-- ✅ Responsive design
-- ✅ Mobile-friendly
+-  Anchor links on headings
+-  Responsive design
+-  Mobile-friendly
 
 ---
 
@@ -246,7 +246,7 @@ cat SUMMARY.md
 
 ## Best Practices
 
-### ✅ Do:
+###  Do:
 - Use relative links between pages
 - Keep SUMMARY.md updated
 - Test locally before deploying
@@ -296,7 +296,7 @@ gitbook build && open _book/index.html
 
 ## Next Steps
 
-1. ✅ Files are GitBook-ready
+1.  Files are GitBook-ready
 2. Choose your publishing method (Cloud or CLI)
 3. Customize `book.json` with your repository URLs
 4. Update GitHub URLs in edit-link plugin
@@ -306,6 +306,6 @@ gitbook build && open _book/index.html
 
 ---
 
-**Your documentation is now ready for GitBook! 🎉**
+**Your documentation is now ready for GitBook! **
 
 All existing Markdown files are compatible and will render beautifully in GitBook's interface.

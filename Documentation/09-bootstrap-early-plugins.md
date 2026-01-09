@@ -5,7 +5,7 @@
 
 ---
 
-## âš ï¸ Important Warning
+## Important Warning
 
 **Bootstrap/Early Plugins should only be used when absolutely necessary!**
 
@@ -31,7 +31,7 @@ Bootstrap/Early Plugins are a special type of plugin that executes **before** th
 
 ### When to Use Early Plugins:
 
-✅ **Use early plugins for:**
+ **Use early plugins for:**
 - Bytecode transformation/modification
 - Low-level core game modifications
 - Injecting code into existing classes
@@ -327,10 +327,10 @@ For more complex transformations, use the **ASM library**:
 
 ### ASM Benefits:
 
-- ✅ Structured bytecode manipulation
-- ✅ Visitor pattern for class modification
-- ✅ Less error-prone than raw byte manipulation
-- ✅ Better maintainability
+-  Structured bytecode manipulation
+-  Visitor pattern for class modification
+-  Less error-prone than raw byte manipulation
+-  Better maintainability
 
 ### Example ASM Transformer:
 
@@ -527,7 +527,7 @@ if (name.startsWith("java.")) {
 return null;
 ```
 
-### ✅ Always return valid bytes
+###  Always return valid bytes
 ```java
 // DO: Return original or modified bytes
 return bytes;
@@ -539,7 +539,7 @@ return bytes;
 return new byte[]{0, 0, 0};
 ```
 
-### ✅ Use proper libraries
+###  Use proper libraries
 ```java
 // DO: Use ASM or similar tools
 ClassReader reader = new ClassReader(bytes);
@@ -606,4 +606,4 @@ Huge thank you to **Darkhax** for creating this guide.
 
 ---
 
-*This documentation is part of the official Community Hytale modding tutorial series.*
+

@@ -5,7 +5,7 @@
 
 ---
 
-## âš ï¸ Important Notice
+## Important Notice
 
 Hytale is currently in **Early Access**, and these tutorials may contain outdated or incomplete information. This documentation aims to provide accurate and helpful guidance for Hytale modders.
 
@@ -48,7 +48,7 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
    Creating and registering configuration files using Hytale's Codec system.
 
 9. **[Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)**  
-   âš ï¸ Advanced: Low-level modifications using class transformers (use only when necessary).
+   Advanced: Low-level modifications using class transformers (use only when necessary).
 
 ---
 
@@ -184,12 +184,12 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 ## Documentation Structure
 
 Each guide includes:
-- ✅ Step-by-step instructions
-- ✅ Code/JSON examples
-- ✅ Complete file structures
-- ✅ Troubleshooting sections
-- ✅ Best practices
-- ✅ Common pitfalls to avoid
+-  Step-by-step instructions
+-  Code/JSON examples
+-  Complete file structures
+-  Troubleshooting sections
+-  Best practices
+-  Common pitfalls to avoid
 
 ---
 
@@ -301,6 +301,6 @@ Hytale modding is evolving! Stay informed:
 
 ---
 
-**Happy Modding!** 🎮✨
+**Happy Modding!** 
 
 *Start your Hytale modding journey today with these comprehensive guides.*

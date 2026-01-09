@@ -88,4 +88,4 @@ To get started with Hytale modding:
 
 ---
 
-*This documentation is part of the official Community Hytale modding tutorial series.*
+

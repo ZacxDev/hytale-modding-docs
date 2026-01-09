@@ -33,12 +33,12 @@ The easiest way to start developing plugins is by using the official template cr
 ### Template Features:
 
 The template includes many great features:
-- ✅ Adds the latest Hytale server files to your classpath
-- ✅ Run the game from your IDE with breakpoint support
-- ✅ Bundle assets with your plugin (editable with in-game Asset Editor)
-- ✅ Supports various patch lines (releases and pre-releases)
-- ✅ Includes example code and assets
-- ✅ Pre-configured Gradle build system
+-  Adds the latest Hytale server files to your classpath
+-  Run the game from your IDE with breakpoint support
+-  Bundle assets with your plugin (editable with in-game Asset Editor)
+-  Supports various patch lines (releases and pre-releases)
+-  Includes example code and assets
+-  Pre-configured Gradle build system
 
 ---
 
@@ -54,7 +54,7 @@ The template includes many great features:
 
 Ensure you have completed all the following before proceeding:
 
-#### ✅ Prerequisites Checklist:
+####  Prerequisites Checklist:
 
 1. **Download Hytale** using the official launcher
 2. **Install IntelliJ IDEA** (Community Edition is sufficient)
@@ -376,4 +376,4 @@ This guide was created by **Darkhax**, **Jared**, and **Rick**.
 
 ---
 
-*This documentation is part of the official Community Hytale modding tutorial series.*
+

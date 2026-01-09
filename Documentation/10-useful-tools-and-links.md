@@ -22,12 +22,12 @@ This page provides a curated collection of useful tools, links, and community re
 The official tool for creating models and assets for Hytale, with a specialized plugin to integrate easily within the game.
 
 #### Features:
-- ✅ Create custom 3D block models
-- ✅ Design items and entities
-- ✅ Create and edit animations
-- ✅ Hytale-specific export formats (`.blockymodel`, `.blockyanim`)
-- ✅ Texture painting and UV mapping
-- ✅ Preview models in real-time
+-  Create custom 3D block models
+-  Design items and entities
+-  Create and edit animations
+-  Hytale-specific export formats (`.blockymodel`, `.blockyanim`)
+-  Texture painting and UV mapping
+-  Preview models in real-time
 
 #### Getting Started:
 1. Download Blockbench from the official website
@@ -406,4 +406,4 @@ This page will be updated as new tools and resources become available. Check bac
 
 ---
 
-*This documentation is part of the Hytale modding tutorial series.*
+

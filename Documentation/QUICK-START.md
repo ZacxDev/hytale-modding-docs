@@ -1,6 +1,6 @@
-# Quick Start Guide
+﻿# Quick Start Guide
 
-## 🚀 GitBook + GitHub in 3 Steps
+##  GitBook + GitHub in 3 Steps
 
 ### Step 1: Push to GitHub
 ```bash
@@ -20,7 +20,7 @@ git push -u origin main
 5. Set root folder: `Documentation/`
 6. Click "Import"
 
-### Step 3: Done! 🎉
+### Step 3: Done! 
 Your docs are live at:
 ```
 https://your-username.gitbook.io/hytale-modding/
@@ -28,7 +28,7 @@ https://your-username.gitbook.io/hytale-modding/
 
 ---
 
-## 📝 Making Updates
+##  Making Updates
 
 ```bash
 # 1. Edit your files locally
@@ -44,7 +44,7 @@ git push origin main
 
 ---
 
-## 🔧 Test Locally (Optional)
+##  Test Locally (Optional)
 
 ```bash
 npm install -g gitbook-cli
@@ -57,19 +57,19 @@ Visit: http://localhost:4000
 
 ---
 
-## 📚 Full Guide
+##  Full Guide
 
 For detailed instructions, see: [GITBOOK-GITHUB-SETUP.md](GITBOOK-GITHUB-SETUP.md)
 
 ---
 
-## ✅ Your Files Are Ready
+##  Your Files Are Ready
 
-- ✅ SUMMARY.md - Navigation structure
-- ✅ README.md - Homepage
-- ✅ .gitbook.yaml - GitBook config
-- ✅ book.json - Plugins & settings
-- ✅ All tutorial files
-- ✅ GitBook compatible
+-  SUMMARY.md - Navigation structure
+-  README.md - Homepage
+-  .gitbook.yaml - GitBook config
+-  book.json - Plugins & settings
+-  All tutorial files
+-  GitBook compatible
 
 **Just push to GitHub and connect to GitBook!**
