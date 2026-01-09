@@ -184,12 +184,12 @@ Hytale is currently in **Early Access**, and these tutorials may contain outdate
 ## Documentation Structure
 
 Each guide includes:
-- âœ… Step-by-step instructions
-- âœ… Code/JSON examples
-- âœ… Complete file structures
-- âœ… Troubleshooting sections
-- âœ… Best practices
-- âœ… Common pitfalls to avoid
+- ✅ Step-by-step instructions
+- ✅ Code/JSON examples
+- ✅ Complete file structures
+- ✅ Troubleshooting sections
+- ✅ Best practices
+- ✅ Common pitfalls to avoid
 
 ---
 
@@ -301,6 +301,6 @@ Hytale modding is evolving! Stay informed:
 
 ---
 
-**Happy Modding!** ðŸŽ®âœ¨
+**Happy Modding!** 🎮✨
 
 *Start your Hytale modding journey today with these comprehensive guides.*

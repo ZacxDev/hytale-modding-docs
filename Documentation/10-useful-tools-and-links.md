@@ -22,12 +22,12 @@ This page provides a curated collection of useful tools, links, and community re
 The official tool for creating models and assets for Hytale, with a specialized plugin to integrate easily within the game.
 
 #### Features:
-- âœ… Create custom 3D block models
-- âœ… Design items and entities
-- âœ… Create and edit animations
-- âœ… Hytale-specific export formats (`.blockymodel`, `.blockyanim`)
-- âœ… Texture painting and UV mapping
-- âœ… Preview models in real-time
+- ✅ Create custom 3D block models
+- ✅ Design items and entities
+- ✅ Create and edit animations
+- ✅ Hytale-specific export formats (`.blockymodel`, `.blockyanim`)
+- ✅ Texture painting and UV mapping
+- ✅ Preview models in real-time
 
 #### Getting Started:
 1. Download Blockbench from the official website
@@ -60,7 +60,7 @@ This knowledge base offers up-to-date information on mod creation and tutorials,
 - Troubleshooting guides
 - Advanced techniques
 
-**Note:** Check Community Discord or forums for the latest link when available.
+**Note:** Check community forums for the latest link when available.
 
 ---
 
@@ -147,21 +147,6 @@ Free and open-source image editor, available for all platforms.
 
 ---
 
-### Aseprite
-
-**Website:** [https://www.aseprite.org/](https://www.aseprite.org/)
-
-**Description:**  
-Pixel art tool perfect for creating Minecraft-style textures.
-
-**Features:**
-- Pixel-perfect drawing
-- Animation support
-- Layer management
-- Tileset creation
-
----
-
 ## Version Control
 
 ### Git
@@ -209,38 +194,6 @@ Java bytecode manipulation and analysis framework.
 - Bytecode injection
 
 **Note:** Only needed for advanced plugin development.
-
----
-
-## Community Platforms
-
-### Community Discord
-
-**Link:** [https://discord.com/invite/Community](https://discord.com/invite/Community)
-
-**Description:**  
-Official Discord server for Community community.
-
-**Channels:**
-- #hytale-modding - General modding discussion
-- #hytale-help - Get help with your mods
-- #showcase - Show off your creations
-- Support from experienced modders
-
----
-
-### Community
-
-**Website:** [https://www.Community.com/hytale](https://www.Community.com/hytale)
-
-**Description:**  
-Official platform for publishing and downloading Hytale mods.
-
-**Features:**
-- Publish your mods
-- Browse community creations
-- Automatic updates
-- Earn rewards as a creator
 
 ---
 
@@ -312,12 +265,12 @@ Free comprehensive Java course.
 
 ### Modding Tutorials
 
-#### Community Hytale Documentation
+#### Hytale Documentation
 **Website:** [https://hytale.com/](https://hytale.com/)  
 Official tutorials and guides (this documentation set).
 
 #### Community Tutorials
-Check Community Discord and Hytale Modding Wiki (when available) for community-created tutorials.
+Check Hytale Modding Wiki (when available) and community forums for community-created tutorials.
 
 ---
 
@@ -380,14 +333,13 @@ Project management boards.
 | Tool | Type | Link | Cost |
 |------|------|------|------|
 | Blockbench | 3D Modeling | [blockbench.net](https://www.blockbench.net) | Free |
-| IntelliJ IDEA | IDE | [jetbrains.com/idea](https://www.jetbrains.com/idea/) | Free/Paid |
+| IntelliJ IDEA | IDE | [jetbreans.com/idea](https://www.jetbrains.com/idea/) | Free/Paid |
 | Java 25 JDK | Runtime | [oracle.com/java](https://www.oracle.com/java/) | Free |
 | Paint.NET | Textures | [getpaint.net](https://www.getpaint.net/) | Free |
 | GIMP | Textures | [gimp.org](https://www.gimp.org/) | Free |
 | Git | Version Control | [git-scm.com](https://git-scm.com/) | Free |
 | GitHub | Hosting | [github.com](https://github.com/) | Free |
 | VS Code | Editor | [code.visualstudio.com](https://code.visualstudio.com/) | Free |
-| Community | Distribution | [Community.com](https://www.Community.com/) | Free |
 
 ---
 
@@ -396,8 +348,8 @@ Project management boards.
 ### When You're Stuck:
 
 1. **Check Documentation:** Review the official tutorials first
-2. **Search Discord:** Someone may have asked your question
-3. **Ask the Community:** Post in #hytale-help on Discord
+2. **Search Community Forums:** Someone may have asked your question
+3. **Ask the Community:** Join Hytale modding communities
 4. **Check Examples:** Look at vanilla assets or other mods
 5. **Read Error Logs:** They often contain helpful information
 
@@ -416,7 +368,7 @@ Project management boards.
 ### Share Your Tools:
 
 If you've created useful tools for Hytale modding:
-1. Share them on Community Discord
+1. Share them on community forums
 2. Submit to the Hytale Modding Wiki
 3. Create GitHub repositories
 4. Write tutorials
@@ -424,15 +376,15 @@ If you've created useful tools for Hytale modding:
 ### Report Broken Links:
 
 If any links in this documentation are broken or outdated:
-- Report on Community Discord
-- Contact support
-- Suggest updates
+- Report on GitHub issues
+- Join community discussions
+- Suggest updates via pull requests
 
 ---
 
 ## Updates
 
-This page will be updated as new tools and resources become available. Check back regularly or join the Community Discord for announcements.
+This page will be updated as new tools and resources become available. Check back regularly for updates.
 
 **Last Updated:** January 9, 2026
 
@@ -447,11 +399,11 @@ This page will be updated as new tools and resources become available. Check bac
 4. **IntelliJ IDEA** - For plugins (if coding)
 
 ### Essential Resources:
-1. **Community Discord** - Community help
-2. **This Documentation** - Official tutorials
+1. **Community Forums** - Community help and discussions
+2. **This Documentation** - Comprehensive tutorials
 3. **Hytale Modding Wiki** - When available
 4. **Blockbench Hytale Plugin** - Model export
 
 ---
 
-*This documentation is part of the official Community Hytale modding tutorial series.*
+*This documentation is part of the Hytale modding tutorial series.*

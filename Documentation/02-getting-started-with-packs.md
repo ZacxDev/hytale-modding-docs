@@ -77,9 +77,9 @@ Create two main folders inside your Pack directory:
 ### Folder Structure:
 ```
 ./AppData/Roaming/Hytale/UserData/Packs/YourPackName/
-â”œâ”€â”€ manifest.json
-â”œâ”€â”€ Common/
-â””â”€â”€ Server/
+–”œ–”€–”€ manifest.json
+–”œ–”€–”€ Common/
+–””–”€–”€ Server/
 ```
 
 ### Common Folder
@@ -106,18 +106,18 @@ Create two main folders inside your Pack directory:
 
 ```
 MyFirstPack/
-â”œâ”€â”€ manifest.json
-â”œâ”€â”€ Common/
-â”‚   â”œâ”€â”€ BlockTextures/
-â”‚   â”œâ”€â”€ Icons/
-â”‚   â””â”€â”€ Models/
-â””â”€â”€ Server/
-    â”œâ”€â”€ Item/
-    â”‚   â”œâ”€â”€ Items/
-    â”‚   â””â”€â”€ Category/
-    â”œâ”€â”€ Languages/
-    â”‚   â””â”€â”€ en-US/
-    â””â”€â”€ Block/
+–”œ–”€–”€ manifest.json
+–”œ–”€–”€ Common/
+–”‚   –”œ–”€–”€ BlockTextures/
+–”‚   –”œ–”€–”€ Icons/
+–”‚   –””–”€–”€ Models/
+–””–”€–”€ Server/
+    –”œ–”€–”€ Item/
+    –”‚   –”œ–”€–”€ Items/
+    –”‚   –””–”€–”€ Category/
+    –”œ–”€–”€ Languages/
+    –”‚   –””–”€–”€ en-US/
+    –””–”€–”€ Block/
 ```
 
 ---

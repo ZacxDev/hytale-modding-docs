@@ -33,12 +33,12 @@ The easiest way to start developing plugins is by using the official template cr
 ### Template Features:
 
 The template includes many great features:
-- âœ… Adds the latest Hytale server files to your classpath
-- âœ… Run the game from your IDE with breakpoint support
-- âœ… Bundle assets with your plugin (editable with in-game Asset Editor)
-- âœ… Supports various patch lines (releases and pre-releases)
-- âœ… Includes example code and assets
-- âœ… Pre-configured Gradle build system
+- ✅ Adds the latest Hytale server files to your classpath
+- ✅ Run the game from your IDE with breakpoint support
+- ✅ Bundle assets with your plugin (editable with in-game Asset Editor)
+- ✅ Supports various patch lines (releases and pre-releases)
+- ✅ Includes example code and assets
+- ✅ Pre-configured Gradle build system
 
 ---
 
@@ -54,7 +54,7 @@ The template includes many great features:
 
 Ensure you have completed all the following before proceeding:
 
-#### âœ… Prerequisites Checklist:
+#### ✅ Prerequisites Checklist:
 
 1. **Download Hytale** using the official launcher
 2. **Install IntelliJ IDEA** (Community Edition is sufficient)
@@ -117,7 +117,7 @@ Edit `src/main/resources/manifest.json` with your project information:
 
 1. **Launch IntelliJ IDEA**
 2. **Open Project:**
-   - Click `File` â†’ `Open`
+   - Click `File` –†’ `Open`
    - Navigate to your extracted template folder
    - Select the folder and click `OK`
 3. **Wait for Initialization:**
@@ -132,10 +132,10 @@ Edit `src/main/resources/manifest.json` with your project information:
 If you haven't already added Java 25 as an SDK:
 
 1. **Open Project Structure:**
-   - `File` â†’ `Project Structure` (or `Ctrl+Alt+Shift+S`)
+   - `File` –†’ `Project Structure` (or `Ctrl+Alt+Shift+S`)
 2. **Add SDK:**
    - Click `SDKs` under `Platform Settings`
-   - Click `+` â†’ `Add JDK`
+   - Click `+` –†’ `Add JDK`
    - Navigate to your Java 25 installation
    - Click `OK`
 3. **Set Project SDK:**
@@ -149,21 +149,21 @@ If you haven't already added Java 25 as an SDK:
 
 ```
 your-plugin-name/
-â”œâ”€â”€ src/
-â”‚   â””â”€â”€ main/
-â”‚       â”œâ”€â”€ java/
-â”‚       â”‚   â””â”€â”€ com/
-â”‚       â”‚       â””â”€â”€ yourname/
-â”‚       â”‚           â””â”€â”€ yourplugin/
-â”‚       â”‚               â””â”€â”€ YourPlugin.java
-â”‚       â””â”€â”€ resources/
-â”‚           â”œâ”€â”€ manifest.json
-â”‚           â”œâ”€â”€ Common/          # Assets (models, textures)
-â”‚           â””â”€â”€ Server/          # Server-side data
-â”œâ”€â”€ build.gradle
-â”œâ”€â”€ settings.gradle
-â”œâ”€â”€ gradle.properties
-â””â”€â”€ README.md
+–”œ–”€–”€ src/
+–”‚   –””–”€–”€ main/
+–”‚       –”œ–”€–”€ java/
+–”‚       –”‚   –””–”€–”€ com/
+–”‚       –”‚       –””–”€–”€ yourname/
+–”‚       –”‚           –””–”€–”€ yourplugin/
+–”‚       –”‚               –””–”€–”€ YourPlugin.java
+–”‚       –””–”€–”€ resources/
+–”‚           –”œ–”€–”€ manifest.json
+–”‚           –”œ–”€–”€ Common/          # Assets (models, textures)
+–”‚           –””–”€–”€ Server/          # Server-side data
+–”œ–”€–”€ build.gradle
+–”œ–”€–”€ settings.gradle
+–”œ–”€–”€ gradle.properties
+–””–”€–”€ README.md
 ```
 
 ---
@@ -200,7 +200,7 @@ To create a shareable JAR file of your plugin:
 
 **Option 2: IDEA Gradle Panel**
 1. Open the Gradle panel (right side of IDEA)
-2. Navigate to: `Tasks` â†’ `build` â†’ `build`
+2. Navigate to: `Tasks` –†’ `build` –†’ `build`
 3. Double-click `build`
 
 ### Output Location:

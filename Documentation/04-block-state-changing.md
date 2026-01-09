@@ -58,7 +58,7 @@ Define an interaction that will trigger the state change. This tells the game wh
 |----------|-------------|
 | `"Use"` | The interaction type (player right-clicks/uses the block) |
 | `"Type": "ChangeState"` | Tells the game to change the block's state |
-| `"Changes"` | Maps current state â†’ next state |
+| `"Changes"` | Maps current state –†’ next state |
 
 ### State Cycling Logic:
 
@@ -70,7 +70,7 @@ Define an interaction that will trigger the state change. This tells the game wh
 }
 ```
 
-This creates a toggle behavior: On â†’ Off â†’ On â†’ Off...
+This creates a toggle behavior: On –†’ Off –†’ On –†’ Off...
 
 ---
 
@@ -272,19 +272,19 @@ For a state-changing block with custom models, you need:
 
 ```
 YourPackName/
-â”œâ”€â”€ Common/
-â”‚   â””â”€â”€ Blocks/
-â”‚       â”œâ”€â”€ model_one.blockymodel
-â”‚       â”œâ”€â”€ model_two.blockymodel
-â”‚       â””â”€â”€ Texture/
-â”‚           â””â”€â”€ textureone.png
-â””â”€â”€ Server/
-    â”œâ”€â”€ Item/
-    â”‚   â””â”€â”€ Items/
-    â”‚       â””â”€â”€ your_block.json
-    â””â”€â”€ Languages/
-        â””â”€â”€ en-US/
-            â””â”€â”€ interactionHints.lang
+–”œ–”€–”€ Common/
+–”‚   –””–”€–”€ Blocks/
+–”‚       –”œ–”€–”€ model_one.blockymodel
+–”‚       –”œ–”€–”€ model_two.blockymodel
+–”‚       –””–”€–”€ Texture/
+–”‚           –””–”€–”€ textureone.png
+–””–”€–”€ Server/
+    –”œ–”€–”€ Item/
+    –”‚   –””–”€–”€ Items/
+    –”‚       –””–”€–”€ your_block.json
+    –””–”€–”€ Languages/
+        –””–”€–”€ en-US/
+            –””–”€–”€ interactionHints.lang
 ```
 
 ---

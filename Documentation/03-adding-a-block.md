@@ -216,20 +216,20 @@ Now you can visually edit your block using the in-game Asset Editor:
 
 ```
 YourPackName/
-â”œâ”€â”€ manifest.json
-â”œâ”€â”€ Common/
-â”‚   â”œâ”€â”€ BlockTextures/
-â”‚   â”‚   â””â”€â”€ Example_Block.png
-â”‚   â””â”€â”€ Icons/
-â”‚       â””â”€â”€ ItemsGenerated/
-â”‚           â””â”€â”€ Example_Block.png
-â””â”€â”€ Server/
-    â”œâ”€â”€ Item/
-    â”‚   â””â”€â”€ Items/
-    â”‚       â””â”€â”€ your_block.json
-    â””â”€â”€ Languages/
-        â””â”€â”€ en-US/
-            â””â”€â”€ server.lang
+–”œ–”€–”€ manifest.json
+–”œ–”€–”€ Common/
+–”‚   –”œ–”€–”€ BlockTextures/
+–”‚   –”‚   –””–”€–”€ Example_Block.png
+–”‚   –””–”€–”€ Icons/
+–”‚       –””–”€–”€ ItemsGenerated/
+–”‚           –””–”€–”€ Example_Block.png
+–””–”€–”€ Server/
+    –”œ–”€–”€ Item/
+    –”‚   –””–”€–”€ Items/
+    –”‚       –””–”€–”€ your_block.json
+    –””–”€–”€ Languages/
+        –””–”€–”€ en-US/
+            –””–”€–”€ server.lang
 ```
 
 ---

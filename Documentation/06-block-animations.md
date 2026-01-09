@@ -364,19 +364,19 @@ Each keyframe contains:
 
 ```
 YourPackName/
-â”œâ”€â”€ Common/
-â”‚   â””â”€â”€ Blocks/
-â”‚       â”œâ”€â”€ Animations/
-â”‚       â”‚   â”œâ”€â”€ Rising_Water.blockyanim
-â”‚       â”‚   â”œâ”€â”€ Empty_Water.blockyanim
-â”‚       â”‚   â””â”€â”€ Wardrobe_Open.blockyanim
-â”‚       â”œâ”€â”€ your_model.blockymodel
-â”‚       â””â”€â”€ Texture/
-â”‚           â””â”€â”€ your_texture.png
-â””â”€â”€ Server/
-    â””â”€â”€ Item/
-        â””â”€â”€ Items/
-            â””â”€â”€ your_block.json
+–”œ–”€–”€ Common/
+–”‚   –””–”€–”€ Blocks/
+–”‚       –”œ–”€–”€ Animations/
+–”‚       –”‚   –”œ–”€–”€ Rising_Water.blockyanim
+–”‚       –”‚   –”œ–”€–”€ Empty_Water.blockyanim
+–”‚       –”‚   –””–”€–”€ Wardrobe_Open.blockyanim
+–”‚       –”œ–”€–”€ your_model.blockymodel
+–”‚       –””–”€–”€ Texture/
+–”‚           –””–”€–”€ your_texture.png
+–””–”€–”€ Server/
+    –””–”€–”€ Item/
+        –””–”€–”€ Items/
+            –””–”€–”€ your_block.json
 ```
 
 ---

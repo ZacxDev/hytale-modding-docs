@@ -25,7 +25,3 @@
 ## Resources & Tools
 
 * [Useful Tools & Links](10-useful-tools-and-links.md)
-
-## Publishing & Setup
-
-* [GitBook + GitHub Setup Guide](GITBOOK-GITHUB-SETUP.md)

@@ -31,7 +31,7 @@ Bootstrap/Early Plugins are a special type of plugin that executes **before** th
 
 ### When to Use Early Plugins:
 
-âœ… **Use early plugins for:**
+✅ **Use early plugins for:**
 - Bytecode transformation/modification
 - Low-level core game modifications
 - Injecting code into existing classes
@@ -327,10 +327,10 @@ For more complex transformations, use the **ASM library**:
 
 ### ASM Benefits:
 
-- âœ… Structured bytecode manipulation
-- âœ… Visitor pattern for class modification
-- âœ… Less error-prone than raw byte manipulation
-- âœ… Better maintainability
+- ✅ Structured bytecode manipulation
+- ✅ Visitor pattern for class modification
+- ✅ Less error-prone than raw byte manipulation
+- ✅ Better maintainability
 
 ### Example ASM Transformer:
 
@@ -527,7 +527,7 @@ if (name.startsWith("java.")) {
 return null;
 ```
 
-### âœ… Always return valid bytes
+### ✅ Always return valid bytes
 ```java
 // DO: Return original or modified bytes
 return bytes;
@@ -539,7 +539,7 @@ return bytes;
 return new byte[]{0, 0, 0};
 ```
 
-### âœ… Use proper libraries
+### ✅ Use proper libraries
 ```java
 // DO: Use ASM or similar tools
 ClassReader reader = new ClassReader(bytes);

@@ -1,6 +1,6 @@
 ﻿# GitBook Setup Instructions
 
-## âœ… GitBook Compatibility
+## ✅ GitBook Compatibility
 
 Your Hytale Modding documentation is now **fully compatible** with GitBook! Here's what was added:
 
@@ -20,7 +20,7 @@ Your Hytale Modding documentation is now **fully compatible** with GitBook! Here
 1. **Create a GitBook Space:**
    - Go to [https://www.gitbook.com/](https://www.gitbook.com/)
    - Sign up or log in
-   - Click "New Space" â†’ "Import from GitHub"
+   - Click "New Space" –†’ "Import from GitHub"
 
 2. **Connect Your Repository:**
    - Select your GitHub repository
@@ -65,27 +65,27 @@ Your Hytale Modding documentation is now **fully compatible** with GitBook! Here
 ## GitBook Features Enabled
 
 ### Navigation
-- âœ… Sidebar navigation (from SUMMARY.md)
-- âœ… Expandable chapters
-- âœ… Back to top button
-- âœ… Previous/Next page links
+- ✅ Sidebar navigation (from SUMMARY.md)
+- ✅ Expandable chapters
+- ✅ Back to top button
+- ✅ Previous/Next page links
 
 ### Search
-- âœ… Enhanced search (search-pro plugin)
-- âœ… Full-text search across all pages
+- ✅ Enhanced search (search-pro plugin)
+- ✅ Full-text search across all pages
 
 ### Code Highlighting
-- âœ… Syntax highlighting for Java, JSON, Bash
-- âœ… Prism.js for better code rendering
+- ✅ Syntax highlighting for Java, JSON, Bash
+- ✅ Prism.js for better code rendering
 
 ### GitHub Integration
-- âœ… "Edit on GitHub" links on each page
-- âœ… GitHub repository link in sidebar
+- ✅ "Edit on GitHub" links on each page
+- ✅ GitHub repository link in sidebar
 
 ### Additional Features
-- âœ… Anchor links on headings
-- âœ… Responsive design
-- âœ… Mobile-friendly
+- ✅ Anchor links on headings
+- ✅ Responsive design
+- ✅ Mobile-friendly
 
 ---
 
@@ -127,22 +127,22 @@ Create `styles/website.css` for custom styles:
 
 ```
 Documentation/
-â”œâ”€â”€ .gitbook.yaml          # GitBook Cloud config
-â”œâ”€â”€ book.json              # GitBook CLI config
-â”œâ”€â”€ SUMMARY.md             # Table of contents
-â”œâ”€â”€ README.md              # Introduction page
-â”œâ”€â”€ GITBOOK_README.md      # This file
-â”‚
-â”œâ”€â”€ 01-hytale-modding-overview.md
-â”œâ”€â”€ 02-getting-started-with-packs.md
-â”œâ”€â”€ 03-adding-a-block.md
-â”œâ”€â”€ 04-block-state-changing.md
-â”œâ”€â”€ 05-item-categories.md
-â”œâ”€â”€ 06-block-animations.md
-â”œâ”€â”€ 07-getting-started-with-plugins.md
-â”œâ”€â”€ 08-custom-config-files.md
-â”œâ”€â”€ 09-bootstrap-early-plugins.md
-â””â”€â”€ 10-useful-tools-and-links.md
+–”œ–”€–”€ .gitbook.yaml          # GitBook Cloud config
+–”œ–”€–”€ book.json              # GitBook CLI config
+–”œ–”€–”€ SUMMARY.md             # Table of contents
+–”œ–”€–”€ README.md              # Introduction page
+–”œ–”€–”€ GITBOOK_README.md      # This file
+–”‚
+–”œ–”€–”€ 01-hytale-modding-overview.md
+–”œ–”€–”€ 02-getting-started-with-packs.md
+–”œ–”€–”€ 03-adding-a-block.md
+–”œ–”€–”€ 04-block-state-changing.md
+–”œ–”€–”€ 05-item-categories.md
+–”œ–”€–”€ 06-block-animations.md
+–”œ–”€–”€ 07-getting-started-with-plugins.md
+–”œ–”€–”€ 08-custom-config-files.md
+–”œ–”€–”€ 09-bootstrap-early-plugins.md
+–””–”€–”€ 10-useful-tools-and-links.md
 ```
 
 ---
@@ -246,14 +246,14 @@ cat SUMMARY.md
 
 ## Best Practices
 
-### âœ… Do:
+### ✅ Do:
 - Use relative links between pages
 - Keep SUMMARY.md updated
 - Test locally before deploying
 - Use consistent heading levels
 - Add alt text to images
 
-### âŒ Don't:
+### –Œ Don't:
 - Use absolute file paths
 - Skip SUMMARY.md entries
 - Mix tab/space indentation
@@ -296,7 +296,7 @@ gitbook build && open _book/index.html
 
 ## Next Steps
 
-1. âœ… Files are GitBook-ready
+1. ✅ Files are GitBook-ready
 2. Choose your publishing method (Cloud or CLI)
 3. Customize `book.json` with your repository URLs
 4. Update GitHub URLs in edit-link plugin
@@ -306,6 +306,6 @@ gitbook build && open _book/index.html
 
 ---
 
-**Your documentation is now ready for GitBook! ðŸŽ‰**
+**Your documentation is now ready for GitBook! 🎉**
 
 All existing Markdown files are compatible and will render beautifully in GitBook's interface.
