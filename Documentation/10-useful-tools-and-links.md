@@ -173,64 +173,9 @@ Tools used to create the official 2018 Hytale trailer. Create cinematic content 
 
 ## Community Resources
 
-### HytaleGuide.net ⭐
-
-**Website:** [https://hytaleguide.net](https://hytaleguide.net)  
-**Forum:** [Community Forum](https://hytaleguide.net)
-
-**Description:**  
-Comprehensive wiki dedicated to Hytale gameplay content, items, mobs, zones, and adventure mode information.
-
-**Content:**
-- **Items Database** - Weapons, armor, food, and item stats
-- **Mobs Encyclopedia** - Creature information, drops, and locations
-- **Zones Guide** - Emerald Grove, Borea, Devastated Lands, Howling Sands
-- **Biomes Information** - Biome-specific content and features
-- **Alterverses** - Information about Orbis and other planets
-- **Guides Section** - Gameplay guides and tutorials
-- **Community Forum** - Discussion and server listings
-
-**Perfect for:**
-- Learning about Hytale gameplay content
-- Understanding items, mobs, and zones
-- Adventure mode information
-- Community discussions and server listings
-
-**Note:** Focuses on gameplay content rather than modding - complementary to modding documentation.
-
----
-
-### Hytale Modding Documentation
-
-**Website:** [https://hytalemodding.dev](https://hytalemodding.dev/en/docs)  
-**GitHub:** [HytaleModding/site](https://github.com/HytaleModding/site)
-
-**Description:**  
-Community-driven documentation site providing comprehensive guides and resources for Hytale modding. Open source and accepting contributions.
-
-**Content:**
-- **Quick Start** - Setting up a standard Hytale project
-- **Learning to Learn** - Meta-learning guide for becoming a better learner
-- **3D Modeling Guides** - Fundamentals, techniques, and best practices
-- **Java Basics Series** - Programming tutorials for beginners
-- **Publishing Your Mod** - How to distribute mods
-- **Established Information** - Core modding concepts and FAQ
-- **Contributing** - How to contribute to their documentation
-
-**Philosophy:**
-> "It is important to note that modding Hytale is not restricted to programming plugins. Programming, visual scripting, texturing, 3D modelling, modifying assets, etc. are all modding. In Hytale, anyone can be a modder."
-
-**Perfect for:**
-- Beginners learning Java programming
-- Those looking for community-driven tutorials
-- Modders wanting to publish their work
-- Contributors who want to help improve documentation
-
----
-
 ### Hytale Modding Video Tutorials
 
-**YouTube Playlist:** [Modding by Kaupenjoe](https://www.youtube.com/playlist?list=PLKGarocXCE1EBIOx2UTpGPZyWMpanSnDj)
+**YouTube Playlist:** [Modding by Britakee](https://www.youtube.com/playlist?list=PLYhXkVs7RxH7rjeyVkYXohYMzYze0PADU)
 
 **Description:**  
 Comprehensive video tutorial series covering Hytale modding from basics to advanced topics.
@@ -240,7 +185,6 @@ Comprehensive video tutorial series covering Hytale modding from basics to advan
 - Visual demonstrations
 - Practical examples
 - Beginner-friendly explanations
-- Advanced techniques and patterns
 
 **Perfect for:** Visual learners who prefer video tutorials over written documentation.
 
