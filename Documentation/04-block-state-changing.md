@@ -324,10 +324,10 @@ YourPackName/
 
 ---
 
-## Credits
+### Getting Help:
 
-Thank you to **Sketch Macaw** for helping to write this article!
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 

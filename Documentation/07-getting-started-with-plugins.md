@@ -9,6 +9,8 @@
 
 This guide will help you get started with creating **Plugins** for Hytale. Plugins are mods written in **Java** that use the game's API to expand vanilla functionality and add new content programmatically.
 
+> ⚠️ **Early Access Warning**: The game Hytale is in early access, and so is this project! Features may be incomplete, unstable, or change frequently. Please be patient and understanding as development continues.
+
 ---
 
 ## Prerequisites
@@ -31,67 +33,58 @@ The easiest way to start developing plugins is by using the official template cr
 ### Template Features:
 
 The template includes many great features:
--  Adds the latest Hytale server files to your classpath
--  Run the game from your IDE with breakpoint support
--  Bundle assets with your plugin (editable with in-game Asset Editor)
--  Supports various patch lines (releases and pre-releases)
--  Includes example code and assets
--  Pre-configured Gradle build system
+- Adds the latest Hytale server files to your classpath
+- Run the game from your IDE with breakpoint support
+- Bundle assets with your plugin (editable with in-game Asset Editor)
+- Supports various patch lines (releases and pre-releases)
+- Includes example code and assets
+- Pre-configured Gradle build system
 
 ---
 
-## Step 2: Setup the Template
+## Step 2: Configure the Template Before Importing
+
+> **Important:** Configure the project before importing it into IDEA to avoid caching issues later.
 
 ### 2.1 Extract the Template
 
-1. Download the ZIP file
+1. Download the ZIP file from the GitHub repository
 2. Extract contents to your desired development location
 3. Read the included `README.md` for detailed setup instructions
 
-### 2.2 Complete Prerequisites Checklist
+### 2.2 Configure Project Files
 
-Ensure you have completed all the following before proceeding:
+Before importing the project, you need to configure three key files:
 
-####  Prerequisites Checklist:
+#### 1. Set Project Name in `settings.gradle`
 
-1. **Download Hytale** using the official launcher
-2. **Install IntelliJ IDEA** (Community Edition is sufficient)
-3. **Download Java 25** and add it as an SDK in IDEA
-4. **Set your project name** in `settings.gradle`
-5. **Review the properties** in `gradle.properties`
-6. **Update the manifest** in `src/main/resources/manifest.json`
-
----
-
-## Step 3: Configure Your Project
-
-### 3.1 Set Project Name
-
-Edit `settings.gradle`:
+Set the name of your project. Use capitalized names and avoid whitespace and special characters, as this will be used as the base name for files produced by Gradle (like the JAR file).
 
 ```gradle
 rootProject.name = 'your-plugin-name'
 ```
 
-### 3.2 Review Gradle Properties
+#### 2. Review Gradle Properties in `gradle.properties`
 
-Open and review `gradle.properties`:
+Update the properties to match your project:
 
 ```properties
-# Example properties (actual values may vary)
-hytale_version=latest
-plugin_version=1.0.0
+# Change maven_group to match your project
+maven_group = com.yourname
+# Update version before making new releases
+version = 1.0.0
 # ... other properties
 ```
 
-### 3.3 Update Manifest File
+#### 3. Update Manifest File in `src/main/resources/manifest.json`
 
-Edit `src/main/resources/manifest.json` with your project information:
+The manifest file provides important information about your plugin to Hytale. Update every property to reflect your project:
 
 ```json
 {
   "Group": "com.yourname",
   "Name": "YourPluginName",
+  "Main": "com.yourname.yourplugin.YourPlugin",
   "Version": "1.0.0",
   "Description": "Description of your plugin",
   "Authors": [
@@ -109,31 +102,39 @@ Edit `src/main/resources/manifest.json` with your project information:
 }
 ```
 
+**Important Manifest Properties:**
+- **Main**: The most critical property - tells the game which class file to load as the entry point for your plugin
+- **Version** and **IncludesAssetPack**: These are automatically updated by Gradle during development and builds, allowing you to use the in-game asset editor
+
 ---
 
-## Step 4: Open the Project in IDEA
+## Step 3: Import the Project into IDEA
 
 1. **Launch IntelliJ IDEA**
 2. **Open Project:**
-   - Click `File` –†’ `Open`
-   - Navigate to your extracted template folder
+   - Click `File` → `Open`
+   - Navigate to your extracted and configured template folder
    - Select the folder and click `OK`
 3. **Wait for Initialization:**
-   - IDEA will import the Gradle project
+   - IDEA will automatically import the Gradle project
+   - The `HytaleServer` run configuration will be created automatically
+   - A `./run` folder will be generated
    - Dependencies will be downloaded automatically
    - This may take several minutes on first run
 
+> **Note:** If you don't see the `HytaleServer` run configuration, open the dropdown menu or click "Edit Configurations..." once to unhide it.
+
 ---
 
-## Step 5: Configure Java 25 SDK
+## Step 4: Configure Java 25 SDK
 
 If you haven't already added Java 25 as an SDK:
 
 1. **Open Project Structure:**
-   - `File` –†’ `Project Structure` (or `Ctrl+Alt+Shift+S`)
+   - `File` → `Project Structure` (or `Ctrl+Alt+Shift+S`)
 2. **Add SDK:**
    - Click `SDKs` under `Platform Settings`
-   - Click `+` –†’ `Add JDK`
+   - Click `+` → `Add JDK`
    - Navigate to your Java 25 installation
    - Click `OK`
 3. **Set Project SDK:**
@@ -143,7 +144,7 @@ If you haven't already added Java 25 as an SDK:
 
 ---
 
-## Step 6: Understanding the Project Structure
+## Step 5: Understanding the Project Structure
 
 ```
 your-plugin-name/
@@ -161,16 +162,53 @@ your-plugin-name/
 |-- build.gradle
 |-- settings.gradle
 |-- gradle.properties
-`-- README.md
+|-- README.md
+`-- run/                         # Generated when you run the server
 ```
+
+---
+
+## Step 6: Authenticating Your Test Server
+
+> **CRITICAL:** You MUST authenticate your test server before you can connect to it!
+
+### Initial Authentication
+
+1. Run the server once from IDEA (it will start but you won't be able to connect yet)
+2. In the server terminal, run:
+   ```
+   auth login device
+   ```
+3. The command will print a URL
+4. Open the URL in your browser and authenticate using your Hytale account
+
+### Persistent Authentication
+
+After authenticating once, run this command to keep your server authenticated after restarting:
+```
+auth persistence Encrypted
+```
+
+> ⚠️ **Security Warning:** Never share your encrypted auth file with anyone!
+
+### Alternative: Authenticate from Code
+
+If you're unable to run commands from the IDEA terminal, you can authenticate from code:
+
+```java
+@Override
+protected void start() {
+    CommandManager.get().handleCommand(ConsoleSender.INSTANCE, "auth login device");
+}
+```
+
+**Important:** Remove this code after your server is authenticated!
 
 ---
 
 ## Step 7: Running the Game from IDEA
 
-### Pre-configured Run Configuration
-
-The template includes a run configuration called **HytaleServer**:
+### Using the Pre-configured Run Configuration
 
 1. **Select Run Configuration:**
    - Look for the dropdown in the top-right of IDEA
@@ -178,18 +216,47 @@ The template includes a run configuration called **HytaleServer**:
 2. **Run or Debug:**
    - Click the green play button to run
    - Click the bug button to debug with breakpoints
-3. **Game Launches:**
-   - Hytale will start with your plugin loaded
+3. **Server Starts:**
+   - Hytale server will start with your plugin loaded
+   - Default assets from the game will be loaded into the `./run` folder
    - You can set breakpoints in your code
    - Debug console shows plugin output
 
+### Connecting to Your Local Server
+
+Once the server is running:
+
+1. **Launch the standard Hytale client** (not from IDEA)
+2. **Connect to Local Server:**
+   - The server should appear automatically
+   - If it doesn't, manually add the IP: `127.0.0.1`
+3. **Join the server** to test your plugin
+
 ---
 
-## Step 8: Building Your Plugin
+## Step 8: Verifying the Example Plugin
+
+The template includes an example plugin you can use to verify everything is working:
+
+### Test Command
+
+Run the `/test` command in-game. It will print the name and version of your plugin.
+
+> **Note:** This is for demonstration purposes and should be removed before your final release.
+
+### Example Recipe
+
+The example plugin includes a recipe that allows you to craft 10 dirt into 1 dirt using the crafting window. This demonstrates how assets can be bundled with your plugin.
+
+> **Note:** This example should also be removed before release.
+
+---
+
+## Step 9: Building Your Plugin
 
 To create a shareable JAR file of your plugin:
 
-### Build with Gradle:
+### Build with Gradle
 
 **Option 1: Terminal**
 ```bash
@@ -198,23 +265,21 @@ To create a shareable JAR file of your plugin:
 
 **Option 2: IDEA Gradle Panel**
 1. Open the Gradle panel (right side of IDEA)
-2. Navigate to: `Tasks` –†’ `build` –†’ `build`
+2. Navigate to: `Tasks` → `build` → `build`
 3. Double-click `build`
 
-### Output Location:
+### Output Location
 
-Your plugin JAR will be in:
+Your plugin JAR will be located at:
 ```bash
 build/libs/your-plugin-name-1.0.0.jar
 ```
 
 ---
 
-## Step 9: Installing Plugins
+## Step 10: Installing Plugins in Hytale
 
-To install plugins in Hytale:
-
-### Installation Path:
+### Installation Path
 
 ```
 %appdata%/Hytale/UserData/Mods/
@@ -225,12 +290,24 @@ To install plugins in Hytale:
 C:\Users\YourUsername\AppData\Roaming\Hytale\UserData\Mods\
 ```
 
-### Installation Steps:
+### Installation Steps
 
 1. **Create Mods Folder** (if it doesn't exist)
 2. **Copy your plugin JAR** into the `Mods/` folder
 3. **Launch Hytale**
 4. Your plugin will be loaded automatically
+
+---
+
+## Alternative IDE Support
+
+### Using VSCode
+
+While VSCode is not officially supported, you can generate launch configurations by running:
+
+```bash
+./gradlew generateVSCodeLaunch
+```
 
 ---
 
@@ -288,6 +365,7 @@ getServer().getPluginManager().registerEvents(new MyListener(), this);
 The template includes Hytale's API in the classpath:
 - Explore the API through IntelliJ's autocomplete
 - Check the example code included in the template
+- Browse available classes and methods
 
 ### 4. Bundle Assets
 You can include Packs (assets) with your Plugin:
@@ -302,7 +380,7 @@ You can include Packs (assets) with your Plugin:
 ### Breakpoints
 1. Click in the left margin next to a line number
 2. A red dot appears indicating a breakpoint
-3. Run in Debug mode
+3. Run in Debug mode (bug icon)
 4. Execution pauses at breakpoints
 
 ### Console Output
@@ -317,53 +395,51 @@ You can include Packs (assets) with your Plugin:
 
 ---
 
-## Next Steps
-
-After setting up your plugin development environment:
-
-1. **Explore the API** - Browse available classes and methods
-2. **Read Example Code** - Study the included examples
-3. **Create Custom Features** - Start implementing your ideas
-4. **Use Config Files** - See "Custom Config Files" tutorial
-5. **Advanced Modding** - Explore "Bootstrap/Early Plugins" if needed
-
----
-
 ## Troubleshooting
 
-### Gradle sync fails:
+### Gradle sync fails
 - Check internet connection (downloads dependencies)
 - Verify Java 25 is properly installed
 - Try: `./gradlew clean build`
 
-### HytaleServer run config missing:
+### HytaleServer run config missing
 - Re-import Gradle project
 - Check `build.gradle` for run configuration setup
-- Manually create run configuration if needed
+- Open the run configuration dropdown or click "Edit Configurations..." to unhide it
 
-### Plugin doesn't load:
-- Verify manifest.json is correct
+### Plugin doesn't load
+- Verify `manifest.json` is correct (especially the `Main` property)
 - Check logs for error messages
 - Ensure plugin JAR is in correct Mods folder
 - Confirm Hytale version compatibility
 
-### Breakpoints don't work:
+### Cannot connect to local server
+- Ensure you've authenticated the server with `auth login device`
+- Verify the server is running (check IDEA console)
+- Try manually adding IP: `127.0.0.1`
+
+### Breakpoints don't work
 - Ensure you're running in Debug mode (bug icon)
 - Verify breakpoint is in executed code
 - Check that source code matches compiled JAR
 
 ---
 
-## Additional Resources
+## Next Steps
 
-### Official Links:
-- **Blockbench:** [https://www.blockbench.net/](https://www.blockbench.net/)
-- **Community Discord:** [Hytale Discord](https://discord.gg/hytale)
+After setting up your plugin development environment:
 
-### Related Tutorials:
-- [Plugin Project Template](15-plugin-project-template.md)
-- [Custom Config Files](08-custom-config-files.md)
-- [Bootstrap/Early Plugins](09-bootstrap-early-plugins.md)
-- [Useful Tools & Links](10-useful-tools-and-links.md)
+1. **Explore the API** - Browse available classes and methods
+2. **Study Example Code** - Review the included examples
+3. **Remove Example Content** - Delete the test command and example recipe before release
+4. **Create Custom Features** - Start implementing your ideas
+5. **Use Config Files** - See "Custom Config Files" tutorial
+6. **Advanced Modding** - Explore "Bootstrap/Early Plugins" if needed
 
+---
 
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

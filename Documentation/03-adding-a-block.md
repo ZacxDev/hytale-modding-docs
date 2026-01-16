@@ -270,10 +270,10 @@ YourPackName/
 
 ---
 
-## Credits
+### Getting Help:
 
-Thank you to **Sketch Macaw** for their help creating this tutorial.
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 

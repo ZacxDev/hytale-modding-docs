@@ -199,7 +199,8 @@ Thank you to **Rick** for helping create this tutorial.
 
 ---
 
-**Next Steps:**
-- Learn more about [Custom Config Files](08-custom-config-files.md)
-- Explore [Getting Started with Plugins](07-getting-started-with-plugins.md)
-- Check out other plugin examples in the community
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

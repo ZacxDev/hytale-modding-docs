@@ -981,19 +981,8 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 
 ---
 
-## Additional Resources
-
-### Getting Help
+## Getting Help:
 
 **Official Channels:**
 - **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
 - **Blog** - [Hytale News](https://hytale.com/news)
-- **Documentation** - [Modding Docs](README.md)
-
----
-
-## Updates
-
-This Q&A is based on developer statements and will be updated as new information becomes available.
-
-**Last Updated:** January 16, 2026

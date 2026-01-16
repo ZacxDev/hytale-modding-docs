@@ -281,8 +281,10 @@ This documentation aims to help you navigate the current state of Hytale modding
 
 ---
 
-**Next:** [Getting Started with Packs →](02-getting-started-with-packs.md)
+### Getting Help:
 
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 

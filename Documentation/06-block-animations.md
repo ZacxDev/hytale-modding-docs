@@ -439,10 +439,10 @@ Look at:
 
 ---
 
-## Credits
+### Getting Help:
 
-Thank you to **Sketch Macaw** for writing this tutorial.
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 

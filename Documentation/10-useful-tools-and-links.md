@@ -644,11 +644,9 @@ If any links in this documentation are broken or outdated:
 
 ---
 
-## Updates
+### Getting Help:
 
-This page will be updated as new tools and resources become available. Check back regularly for updates.
-
-**Last Updated:** January 9, 2026
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 

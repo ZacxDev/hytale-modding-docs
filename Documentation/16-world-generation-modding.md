@@ -297,3 +297,9 @@ Hytale developers have created experimental terrain packs to showcase possibilit
 ---
 
 *The Echoes of Orbis and Orbis are just the beginning of an amazing journey.*
+
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

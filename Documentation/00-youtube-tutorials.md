@@ -20,3 +20,9 @@ This tutorial by **Britakee** provides a step-by-step guide on using the in-game
 * **Custom Items:** You can quickly create new items by using the "Copy Asset" feature to duplicate an existing Hytale item and then modifying its texture and properties.
 * **Localization:** To fix the item's name in the inventory, you need to create a `Server/Languages/en-US/server.lang` file and define the item name key.
 * **Sharing Mods:** To make your mod available globally, compress the manifest and folders into a `.zip` file and move it to `%AppData%/Hytale/UserData/Mods/`.
+
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

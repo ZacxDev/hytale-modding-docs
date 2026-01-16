@@ -405,4 +405,8 @@ Stay tuned for more comprehensive guides!
 
 ---
 
-*Have fun creating! Your art style is yours, and don't let anyone tell you otherwise.*
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

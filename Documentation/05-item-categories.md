@@ -243,10 +243,10 @@ The `Order` property determines the position of your category in the Creative Me
 
 ---
 
-## Credits
+### Getting Help:
 
-Thank you to **Sketch Macaw** for helping to create this tutorial.
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 

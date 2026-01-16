@@ -461,11 +461,11 @@ If you're migrating from another template:
 
 ---
 
-## Credits
+### Getting Help:
 
-Created by the Hytale modding community.
-
-Based on best practices from production Hytale plugins and modern Java development standards.
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 ---
 

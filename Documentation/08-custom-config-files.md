@@ -412,10 +412,10 @@ public class MyPlugin extends JavaPlugin {
 
 ---
 
-## Credits
+### Getting Help:
 
-A huge thank you to **Buuz** for creating this tutorial!
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 

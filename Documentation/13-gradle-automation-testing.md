@@ -610,3 +610,9 @@ java -jar run/server.jar --version
 - Create release automation
 
 ---
+
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

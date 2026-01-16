@@ -798,3 +798,9 @@ public class MyPlugin extends JavaPlugin {
 - Consider creating a developer API for other plugins
 
 ---
+
+### Getting Help:
+
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)

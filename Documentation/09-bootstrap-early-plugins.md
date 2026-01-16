@@ -600,10 +600,10 @@ ClassReader reader = new ClassReader(bytes);
 
 ---
 
-## Credits
+### Getting Help:
 
-Huge thank you to **Darkhax** for creating this guide.
-
----
+**Official Channels:**
+- **Discord** - [Official Hytale Discord](https://discord.gg/hytale)
+- **Blog** - [Hytale News](https://hytale.com/news)
 
 
