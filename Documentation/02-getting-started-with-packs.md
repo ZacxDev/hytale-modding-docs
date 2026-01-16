@@ -133,6 +133,8 @@ MyFirstPack/
 
 > **Note:** I can't list every folder, as it would make the page too long!
 
+To see a complete folder overview of hytale's files do the these steps:
+
 1. Open your Hytale launcher
 2. Top left on settings
 3. Click on Open Directory
