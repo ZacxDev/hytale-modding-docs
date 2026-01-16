@@ -1,6 +1,4 @@
-Here is your full, original `README.md` content, updated to include the new **Server Administration** files and reorganized to match your taskbar order. All links now point directly to your local files with no external search prefixes.
-
----
+# Hytale Modding Documentation
 
 **Compiled:** January 16, 2026
 **Status:** Hytale is currently in Early Access
