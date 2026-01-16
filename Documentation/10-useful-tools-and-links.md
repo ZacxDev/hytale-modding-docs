@@ -442,10 +442,6 @@ Use GitHub releases to distribute your mods directly.
 
 ### Java Tutorials
 
-#### Hytale Modding - Java Basics
-**Website:** [hytalemodding.dev/guides/java-basics](https://hytalemodding.dev/en/docs/guides/java-basics)  
-Community-created Java basics series specifically for Hytale modders.
-
 #### w3schools Java Tutorial
 **Website:** [https://www.w3schools.com/java/](https://www.w3schools.com/java/)  
 Interactive Java tutorials with examples.
@@ -469,10 +465,6 @@ Free comprehensive Java course.
 #### Official Hytale Blog
 **Website:** [https://hytale.com/news](https://hytale.com/news)  
 Official tutorials, guides, and development updates.
-
-#### Hytale Modding Documentation
-**Website:** [https://hytalemodding.dev](https://hytalemodding.dev/en/docs)  
-Community-driven modding documentation with guides and tutorials.
 
 #### This Documentation
 Comprehensive guides covering Packs, Plugins, World Generation, and more.
