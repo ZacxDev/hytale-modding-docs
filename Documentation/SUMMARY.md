@@ -4,6 +4,7 @@
 
 * [Overview](README.md)
 * [Frequently Asked Questions](00-frequently-asked-questions.md)
+* [Technical Insights](00-technical-insights.md)
 
 ## Getting Started
 

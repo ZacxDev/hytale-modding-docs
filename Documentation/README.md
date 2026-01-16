@@ -12,10 +12,9 @@ Hytale is currently in **Early Access**. This documentation is based on official
 
 **Key Points:**
 - Official tools are actively being developed and improved
-- Server source code will be released within 1-2 months (March 2026)
 - Official GitBook documentation is in progress by Hytale developers
-- Visual scripting is planned (no text-based scripting like Lua)
 - **Take frequent backups** - crashes can cause data loss
+- [Frequently Asked Questions](00-frequently-asked-questions.md)
 
 > *"We're building Hytale with modding at its core. Most of what you see in the game can be changed, extended, or removed entirely."* - Slikey (Technical Director)
 
