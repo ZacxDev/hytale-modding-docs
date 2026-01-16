@@ -21,14 +21,16 @@ Comprehensive summary of technical insights from Hytale developers covering arch
 Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, instead of traditional TCP.
 
 **Benefits:**
-- ⚡ Fast like UDP
-- ✅ Reliable like TCP
-- 🎮 Optimized for gaming
-- 🌐 Modern internet standard
+
+* Fast like UDP
+* Reliable like TCP
+* Optimized for gaming
+* Modern internet standard
 
 **Known Limitation:**
-- ⚠️ QUIC may be blocked in some regions
-- No alternative protocol currently planned
+
+* QUIC may be blocked in some regions
+* No alternative protocol currently planned
 
 ---
 
@@ -36,25 +38,27 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 
 **Any platform supporting Java 25**
 
-- ✅ Windows (primary)
-- ✅ Linux (actively supported)
-- ✅ macOS (in development)
-- ✅ Any OS with Java 25 runtime
+* Windows (primary)
+* Linux (actively supported)
+* macOS (in development)
+* Any OS with Java 25 runtime
 
 **Server Hosting:**
-- Available on day 1 of Early Access
-- No business agreements required
-- Just comply with EULA/TOS
-- Full self-hosting support
+
+* Available on day 1 of Early Access
+* No business agreements required
+* Just comply with EULA/TOS
+* Full self-hosting support
 
 ---
 
 #### How does multiplayer connectivity work?
 
 **Connection Methods:**
-- **Launch:** Direct IP connection
-- **Post-Launch:** Server discovery system planned
-- **No Authentication Server Required:** For direct connections
+
+* **Launch:** Direct IP connection
+* **Post-Launch:** Server discovery system planned
+* **No Authentication Server Required:** For direct connections
 
 ---
 
@@ -62,10 +66,10 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 
 **Default: 30 TPS (Ticks Per Second)**
 
-- Base server tick rate is 30 TPS
-- Can be changed using server plugins
-- Multi-core support for better performance
-- Each world has main thread + parallel execution
+* Base server tick rate is 30 TPS
+* Can be changed using server plugins
+* Multi-core support for better performance
+* Each world has main thread + parallel execution
 
 ---
 
@@ -74,14 +78,16 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **OpenGL 3.3**
 
 **Why OpenGL 3.3:**
-- Mac compatibility
-- Wide hardware support
-- Stable and proven
+
+* Mac compatibility
+* Wide hardware support
+* Stable and proven
 
 **Future Plans:**
-- Potential migration to Vulkan
-- Potential migration to Metal
-- Performance improvements planned
+
+* Potential migration to Vulkan
+* Potential migration to Metal
+* Performance improvements planned
 
 ---
 
@@ -92,15 +98,17 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **No - Absolutely not.**
 
 **Security Model:**
-- ❌ No client-side code execution
-- ✅ Prevents remote code execution exploits
-- ✅ Server controls everything
-- ✅ Safe, sandboxed environment
+
+* No client-side code execution
+* Prevents remote code execution exploits
+* Server controls everything
+* Safe, sandboxed environment
 
 **What Clients Can Download:**
-- ✅ Configuration files
-- ✅ Assets (models, textures, sounds)
-- ❌ Executable code
+
+* Configuration files
+* Assets (models, textures, sounds)
+* Executable code
 
 ---
 
@@ -109,15 +117,17 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **Community Platforms**
 
 **Primary Channels:**
-- [CurseForge](https://www.curseforge.com)
-- [Modrinth](https://modrinth.com)
-- GitHub releases
-- Community websites
+
+* [CurseForge](https://www.curseforge.com)
+* [Modrinth](https://modrinth.com)
+* GitHub releases
+* Community websites
 
 **In-Game Marketplace:**
-- ⏳ Not planned for immediate launch
-- May be added later
-- Focus on community platforms first
+
+* Not planned for immediate launch
+* May be added later
+* Focus on community platforms first
 
 ---
 
@@ -130,14 +140,16 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **Full Java Access - Anything Java Can Do**
 
 **Capabilities:**
-- 🗄️ Database connections (MySQL, PostgreSQL, MongoDB)
-- 🌐 Web requests (REST APIs, webhooks)
-- 📚 Any Java library or framework
-- 🔧 Custom systems (economy, permissions, clans)
-- 🤖 Machine learning frameworks
-- 📜 Scripting languages (Lua, JavaScript)
+
+* Database connections (MySQL, PostgreSQL, MongoDB)
+* Web requests (REST APIs, webhooks)
+* Any Java library or framework
+* Custom systems (economy, permissions, clans)
+* Machine learning frameworks
+* Scripting languages (Lua, JavaScript)
 
 **Example Use Cases:**
+
 ```
 - Connect to external databases
 - Create REST APIs
@@ -145,6 +157,7 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 - Implement custom payment systems
 - Build AI-powered NPCs
 - Create mini-game frameworks
+
 ```
 
 ---
@@ -154,17 +167,19 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **Yes - Full Server Source Access**
 
 **Features:**
-- ✅ Shared server source code
-- ✅ Developer comments included
-- ✅ Unobfuscated code
-- ✅ Heavy modifications possible
-- ✅ Learn from official implementation
+
+* Shared server source code
+* Developer comments included
+* Unobfuscated code
+* Heavy modifications possible
+* Learn from official implementation
 
 **Benefits:**
-- Understand how systems work
-- Unblock yourself when documentation is sparse
-- Contribute improvements and bug fixes
-- Create deep integrations
+
+* Understand how systems work
+* Unblock yourself when documentation is sparse
+* Contribute improvements and bug fixes
+* Create deep integrations
 
 ---
 
@@ -173,17 +188,19 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **Yes - For Most Asset Types**
 
 **Hot Reload Support:**
-- ✅ JSON data files
-- ✅ Models and textures
-- ✅ World generation assets
-- ✅ Most visual assets
-- ⚠️ Some code changes may require restart
+
+* JSON data files
+* Models and textures
+* World generation assets
+* Most visual assets
+* Some code changes may require restart
 
 **Developer Experience:**
-- Fast iteration cycles
-- See changes immediately
-- No full server restarts needed
-- Efficient testing workflow
+
+* Fast iteration cycles
+* See changes immediately
+* No full server restarts needed
+* Efficient testing workflow
 
 ---
 
@@ -194,17 +211,19 @@ Hytale uses QUIC, which is a reliable UDP protocol with unreliable channels, ins
 **Yes - Visual Node Editor**
 
 **World Generation V2:**
-- 🎨 Visual node-based editor
-- 🌍 Custom biomes and maps
-- 🏔️ Terrain shape control
-- 🌲 Prop placement systems
-- 💎 Material providers
-- 🔄 Live-reload in-game
+
+* Visual node-based editor
+* Custom biomes and maps
+* Terrain shape control
+* Prop placement systems
+* Material providers
+* Live-reload in-game
 
 **No Java Knowledge Required:**
-- Accessible with tutorials and practice
-- Same tools used by Hytale team
-- Link simple nodes to create complex systems
+
+* Accessible with tutorials and practice
+* Same tools used by Hytale team
+* Link simple nodes to create complex systems
 
 See: [World Generation Modding](16-world-generation-modding.md)
 
@@ -215,18 +234,20 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **JSON-Based Configuration**
 
 **Data-Driven Systems:**
-- 📦 Items and blocks
-- 🤖 NPC behavior and AI
-- ⚔️ Combat abilities
-- 🎁 Loot tables
-- 🧪 Crafting recipes
-- 🎯 Custom interactions
+
+* Items and blocks
+* NPC behavior and AI
+* Combat abilities
+* Loot tables
+* Crafting recipes
+* Custom interactions
 
 **Hytale Asset Editor:**
-- Visual editor for JSON files
-- No coding required
-- Live preview of changes
-- Built into the game
+
+* Visual editor for JSON files
+* No coding required
+* Live preview of changes
+* Built into the game
 
 ---
 
@@ -235,18 +256,20 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Replaces Command Blocks**
 
 **Features:**
-- 🔷 Node-based logic builder
-- 🛡️ Fully sandboxed and safe
-- 🎮 No coding required
-- 🔌 Programmers can extend with custom nodes
-- 🌐 Eventually: Visual scripting in 3D world
+
+* Node-based logic builder
+* Fully sandboxed and safe
+* No coding required
+* Programmers can extend with custom nodes
+* Eventually: Visual scripting in 3D world
 
 **Use Cases:**
-- Door mechanisms
-- Puzzle logic
-- Custom interactions
-- Quest triggers
-- Minigame mechanics
+
+* Door mechanisms
+* Puzzle logic
+* Custom interactions
+* Quest triggers
+* Minigame mechanics
 
 **Timeline:** Long-term priority, core pillar of Hytale modding
 
@@ -257,17 +280,19 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Sophisticated Building Blocks**
 
 **Features:**
-- 🏗️ Prebuilt structures
-- ✏️ In-game prefab editor
-- 🌲 Trees, houses, landmarks
-- 🎨 Creative tool integration
-- 🌍 World generation usage
+
+* Prebuilt structures
+* In-game prefab editor
+* Trees, houses, landmarks
+* Creative tool integration
+* World generation usage
 
 **Creator Tools:**
-- Browse 100+ official prefabs
-- Edit in separate environment
-- Save custom prefabs
-- Share with community
+
+* Browse 100+ official prefabs
+* Edit in separate environment
+* Save custom prefabs
+* Share with community
 
 ---
 
@@ -278,17 +303,19 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Data-Driven Interaction System**
 
 **Features:**
-- ⚔️ Attack chains and combos
-- 🎯 Custom abilities
-- 🔄 Interaction sequences
-- 📊 Configurable via JSON
-- 🎮 No coding required for basic combat
+
+* Attack chains and combos
+* Custom abilities
+* Interaction sequences
+* Configurable via JSON
+* No coding required for basic combat
 
 **Extensibility:**
-- Custom attack patterns
-- Unique weapon behaviors
-- Special abilities
-- Boss mechanics
+
+* Custom attack patterns
+* Unique weapon behaviors
+* Special abilities
+* Boss mechanics
 
 ---
 
@@ -297,16 +324,18 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - But Needs Improvement**
 
 **Current Status:**
-- ✅ Sub-hitbox support exists
-- ✅ Enables complex boss mechanics
-- ⚠️ System needs improvement
-- 🔧 Actively being enhanced
+
+* Sub-hitbox support exists
+* Enables complex boss mechanics
+* System needs improvement
+* Actively being enhanced
 
 **Use Cases:**
-- Multi-part bosses
-- Weak point targeting
-- Limb-specific damage
-- Complex enemy designs
+
+* Multi-part bosses
+* Weak point targeting
+* Limb-specific damage
+* Complex enemy designs
 
 ---
 
@@ -315,18 +344,20 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - Buff/Debuff System**
 
 **Features:**
-- 💪 Custom buffs and debuffs
-- 📊 Custom stats and attributes
-- ⏱️ Duration and stacking
-- 🎨 Visual effects
-- 🔧 Fully extensible
+
+* Custom buffs and debuffs
+* Custom stats and attributes
+* Duration and stacking
+* Visual effects
+* Fully extensible
 
 **Examples:**
-- Poison damage over time
-- Speed boosts
-- Armor buffs
-- Custom attribute modifiers
-- Unique effects
+
+* Poison damage over time
+* Speed boosts
+* Armor buffs
+* Custom attribute modifiers
+* Unique effects
 
 ---
 
@@ -335,18 +366,20 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - NoesisGUI Transition**
 
 **Current Status:**
-- 🔄 Transitioning to NoesisGUI
-- 🎨 Powerful interface customization
-- 📊 Asset-driven UIs available
-- ⚠️ Currently incomplete
-- 🔧 Actively being improved
+
+* Transitioning to NoesisGUI
+* Powerful interface customization
+* Asset-driven UIs available
+* Currently incomplete
+* Actively being improved
 
 **Capabilities:**
-- Custom menus and HUDs
-- Interactive interfaces
-- Data visualization
-- Mini-map systems
-- Quest trackers
+
+* Custom menus and HUDs
+* Interactive interfaces
+* Data visualization
+* Mini-map systems
+* Quest trackers
 
 **Recommendation:** Start experimenting and provide feedback
 
@@ -357,20 +390,23 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Selective System**
 
 **What Falls:**
-- ✅ Trees collapse when chopped
-- ✅ Natural blocks can fall
-- ✅ Specific physics-enabled blocks
+
+* Trees collapse when chopped
+* Natural blocks can fall
+* Specific physics-enabled blocks
 
 **What Doesn't Fall:**
-- ❌ Player-placed blocks (by default)
-- ❌ Buildings can float
-- ❌ Most constructed structures
+
+* Player-placed blocks (by default)
+* Buildings can float
+* Most constructed structures
 
 **Why Selective:**
-- Gameplay balance
-- Building freedom
-- Performance considerations
-- Can be modded for different behavior
+
+* Gameplay balance
+* Building freedom
+* Performance considerations
+* Can be modded for different behavior
 
 ---
 
@@ -383,14 +419,16 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **No Hunger by Default**
 
 **Stamina System:**
-- ✅ Stamina for actions
-- ❌ No hunger mechanic
-- 🔧 Can be modded in
+
+* Stamina for actions
+* No hunger mechanic
+* Can be modded in
 
 **Design Philosophy:**
-- Focus on exploration and combat
-- Reduce survival tedium
-- Fully customizable by servers
+
+* Focus on exploration and combat
+* Reduce survival tedium
+* Fully customizable by servers
 
 ---
 
@@ -399,19 +437,22 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Selective Block Physics**
 
 **Natural Blocks:**
-- Trees fall when cut
-- Leaves decay
-- Sand/gravel may fall
+
+* Trees fall when cut
+* Leaves decay
+* Sand/gravel may fall
 
 **Player Structures:**
-- Buildings can float
-- No structural integrity requirements
-- Creative freedom prioritized
+
+* Buildings can float
+* No structural integrity requirements
+* Creative freedom prioritized
 
 **Modding:**
-- Physics can be customized
-- Different rules for different blocks
-- Full control via plugins
+
+* Physics can be customized
+* Different rules for different blocks
+* Full control via plugins
 
 ---
 
@@ -420,14 +461,16 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Major Overhaul Planned**
 
 **Current Issues:**
-- Model/voxel lighting inconsistencies
-- Some visual artifacts
+
+* Model/voxel lighting inconsistencies
+* Some visual artifacts
 
 **Improvements Coming:**
-- Fix model/voxel conflicts
-- Better light propagation
-- Enhanced shadow quality
-- More realistic lighting
+
+* Fix model/voxel conflicts
+* Better light propagation
+* Enhanced shadow quality
+* More realistic lighting
 
 ---
 
@@ -436,14 +479,16 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Currently Limited**
 
 **Status:**
-- ⚠️ Current height limit exists
-- 🔄 May change with voxel storage updates
-- 🔧 Technical limitations being addressed
+
+* Current height limit exists
+* May change with voxel storage updates
+* Technical limitations being addressed
 
 **Future:**
-- Potential height increase
-- Voxel storage improvements
-- Better vertical world space
+
+* Potential height increase
+* Voxel storage improvements
+* Better vertical world space
 
 ---
 
@@ -452,15 +497,17 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Not at Launch**
 
 **Visual Scripting Instead:**
-- 🔷 Node-based logic
-- 🎮 More powerful than redstone
-- 🛡️ Sandboxed and safe
-- 🔧 Fully moddable
+
+* Node-based logic
+* More powerful than redstone
+* Sandboxed and safe
+* Fully moddable
 
 **Can Be Modded:**
-- Plugins can add redstone-like systems
-- Community may create alternatives
-- Full flexibility for servers
+
+* Plugins can add redstone-like systems
+* Community may create alternatives
+* Full flexibility for servers
 
 ---
 
@@ -471,14 +518,16 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Humans by Default**
 
 **Creative Mode:**
-- ✅ Change to any NPC model
-- 🎨 Player Model Changer tool
-- 🎭 Become any creature
+
+* Change to any NPC model
+* Player Model Changer tool
+* Become any creature
 
 **Multiplayer:**
-- 🖥️ Server-controlled avatars
-- ❌ No custom models in multiplayer (for now)
-- 🎨 Skin customization available
+
+* Server-controlled avatars
+* No custom models in multiplayer (for now)
+* Skin customization available
 
 ---
 
@@ -489,15 +538,17 @@ See: [World Generation Modding](16-world-generation-modding.md)
 > *"Mod yourself into a potato"* - Developers
 
 **Features:**
-- ✅ Complete skin customization
-- ✅ Upload custom textures
-- ✅ Unique character appearance
-- ✅ Creative freedom
+
+* Complete skin customization
+* Upload custom textures
+* Unique character appearance
+* Creative freedom
 
 **Cosmetics:**
-- Official cosmetic packs (low price)
-- Support server infrastructure
-- No pay-to-win
+
+* Official cosmetic packs (low price)
+* Support server infrastructure
+* No pay-to-win
 
 ---
 
@@ -506,10 +557,11 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - Transformation Potions**
 
 **Features:**
-- 🧪 Potions that change player form
-- 🎭 Transform into different creatures
-- 🎮 Fun gameplay mechanic
-- 🔧 Moddable for custom transformations
+
+* Potions that change player form
+* Transform into different creatures
+* Fun gameplay mechanic
+* Moddable for custom transformations
 
 ---
 
@@ -520,17 +572,19 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Living World with Dynamic NPCs**
 
 **Features:**
-- 🌍 Factions interact with each other
-- ⚔️ Dynamic relationships
-- 🏰 Territory control
-- 🤝 Player reputation
-- 📊 Consequence-driven world
+
+* Factions interact with each other
+* Dynamic relationships
+* Territory control
+* Player reputation
+* Consequence-driven world
 
 **Immersion:**
-- NPCs remember player actions
-- World reacts to player choices
-- Ongoing faction conflicts
-- Living, breathing world
+
+* NPCs remember player actions
+* World reacts to player choices
+* Ongoing faction conflicts
+* Living, breathing world
 
 ---
 
@@ -539,11 +593,12 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Planned for Future Updates**
 
 **Vision:**
-- 🏘️ Villages with relationships
-- 👥 NPC behaviors and routines
-- 📈 Village growth and development
-- ⚔️ Village defense and raids
-- 🤝 Player interaction with communities
+
+* Villages with relationships
+* NPC behaviors and routines
+* Village growth and development
+* Village defense and raids
+* Player interaction with communities
 
 **Status:** Being designed and developed
 
@@ -554,16 +609,18 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Render Distance Based**
 
 **Loading Rules:**
-- ✅ Entities load when in ANY player's render distance
-- ❌ Entities unload when ALL players are out of range
-- 🔄 Chunks load/unload dynamically
-- ⚡ Optimized for performance
+
+* Entities load when in ANY player's render distance
+* Entities unload when ALL players are out of range
+* Chunks load/unload dynamically
+* Optimized for performance
 
 **Benefits:**
-- Better server performance
-- Reduced memory usage
-- Smooth gameplay
-- Efficient resource management
+
+* Better server performance
+* Reduced memory usage
+* Smooth gameplay
+* Efficient resource management
 
 ---
 
@@ -572,10 +629,11 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - Shareable Seeds**
 
 **Features:**
-- 🌱 Enter custom seeds
-- 🔄 Generate identical worlds
-- 👥 Share with friends
-- 🗺️ Community seed databases
+
+* Enter custom seeds
+* Generate identical worlds
+* Share with friends
+* Community seed databases
 
 ---
 
@@ -588,15 +646,17 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Adventure Mode First**
 
 **Focus Areas:**
+
 1. Base game experience
 2. Core gameplay loops
 3. Adventure mode content
 4. Modding architecture (supports everything)
 
 **Modding Support:**
-- Built alongside adventure mode
-- Same tools used internally
-- "Anything we do, you can do"
+
+* Built alongside adventure mode
+* Same tools used internally
+* "Anything we do, you can do"
 
 ---
 
@@ -605,12 +665,14 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Acknowledged as Necessary**
 
 **Approach:**
-- ✅ Some tech debt required for release
-- 🔧 Commitment to continuous improvement
-- 📊 Transparent about limitations
-- 🔄 Active post-launch refinement
+
+* Some tech debt required for release
+* Commitment to continuous improvement
+* Transparent about limitations
+* Active post-launch refinement
 
 **Philosophy:**
+
 > *"Release first, improve continuously"*
 
 ---
@@ -620,15 +682,17 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Very Frequent Updates**
 
 **Cadence:**
-- 🚀 Especially frequent post-launch
-- 🔧 Bug fixes and improvements
-- ✨ New features and content
-- 📊 Community-driven priorities
+
+* Especially frequent post-launch
+* Bug fixes and improvements
+* New features and content
+* Community-driven priorities
 
 **Commitment:**
-- Long-term support
-- Active development
-- Community feedback integration
+
+* Long-term support
+* Active development
+* Community feedback integration
 
 ---
 
@@ -637,16 +701,18 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Always Latest Version**
 
 **Server Flexibility:**
-- 🔄 Official client always latest
-- 🖥️ Servers can run modified versions
-- 🔧 Server source code available
-- ⚙️ Customize as needed
+
+* Official client always latest
+* Servers can run modified versions
+* Server source code available
+* Customize as needed
 
 **Benefits:**
-- No fragmentation
-- Consistent client experience
-- Server flexibility
-- Modding freedom
+
+* No fragmentation
+* Consistent client experience
+* Server flexibility
+* Modding freedom
 
 ---
 
@@ -657,10 +723,11 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - Planned for Community Contributors**
 
 **Vision:**
-- 💰 Reward contributions
-- 🔧 Strengthen ecosystem
-- 👥 Community-driven development
-- 🏆 Recognize talent
+
+* Reward contributions
+* Strengthen ecosystem
+* Community-driven development
+* Recognize talent
 
 **Timeline:** Takes time to set up properly
 
@@ -671,16 +738,18 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Yes - Planned with Partners**
 
 **Content:**
-- 📚 Official modding tutorials
-- 🎥 Video guides
-- 📖 Written documentation
-- 🤝 Partner collaborations
+
+* Official modding tutorials
+* Video guides
+* Written documentation
+* Partner collaborations
 
 **Documentation:**
-- GitBook public documentation
-- Initially sparse
-- Expands based on community questions
-- Community contributions welcome
+
+* GitBook public documentation
+* Initially sparse
+* Expands based on community questions
+* Community contributions welcome
 
 ---
 
@@ -689,12 +758,14 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Strong Commitment**
 
 **Process:**
-- 👂 Active listening on Discord
-- 📊 Community-driven improvements
-- 🗳️ Feedback shapes development
-- 🔄 Transparent communication
+
+* Active listening on Discord
+* Community-driven improvements
+* Feedback shapes development
+* Transparent communication
 
 **Accountability:**
+
 > *"Hold us accountable, demand answers, provide feedback"* - Developers
 
 ---
@@ -704,15 +775,17 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Designed for Accessibility**
 
 **Target:**
-- 💻 Lower-end hardware support
-- ⚡ Reasonable requirements
-- 🎮 Wide player base
-- 📊 Performance optimization
+
+* Lower-end hardware support
+* Reasonable requirements
+* Wide player base
+* Performance optimization
 
 **Performance:**
-- Uncapped framerate
-- Multi-core support
-- Optimization focus
+
+* Uncapped framerate
+* Multi-core support
+* Optimization focus
 
 ---
 
@@ -725,16 +798,18 @@ See: [World Generation Modding](16-world-generation-modding.md)
 **Blockbench (Official)**
 
 **Integration:**
-- 🔌 Hytale Blockbench Plugin
-- 🎨 Replaces "Hytale Model Maker"
-- ✅ Official support
-- 📊 Direct integration
+
+* Hytale Blockbench Plugin
+* Replaces "Hytale Model Maker"
+* Official support
+* Direct integration
 
 **Why Blockbench:**
-- Better community workflow support
-- Established creative tool
-- Active development
-- Wide adoption
+
+* Better community workflow support
+* Established creative tool
+* Active development
+* Wide adoption
 
 See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 
@@ -745,15 +820,17 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Full Cinematic Creation**
 
 **Features:**
-- 🎬 Camera keyframe animation
-- 🎥 Used for official trailers
-- 🎮 In-game recording
-- 🔧 Needs technical fixes
+
+* Camera keyframe animation
+* Used for official trailers
+* In-game recording
+* Needs technical fixes
 
 **Status:**
-- Available but rough
-- Massive upgrade planned post-launch
-- Used professionally by Hytale team
+
+* Available but rough
+* Massive upgrade planned post-launch
+* Used professionally by Hytale team
 
 ---
 
@@ -762,10 +839,11 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Major Reveal Planned**
 
 **Confirmed Tools:**
-- 🏗️ Building tools
-- ✏️ Creation features
-- 🎨 Creative mode enhancements
-- 🔧 Advanced editing capabilities
+
+* Building tools
+* Creation features
+* Creative mode enhancements
+* Advanced editing capabilities
 
 **See:** [Creative Mode Blog](https://hytale.com/news/2025/11/hytale-creative-mode)
 
@@ -776,18 +854,20 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Yes - Unobfuscated with Comments**
 
 **Features:**
-- ✅ Full server source code
-- ✅ Developer comments
-- ✅ No obfuscation
-- ✅ Learn from implementation
+
+* Full server source code
+* Developer comments
+* No obfuscation
+* Learn from implementation
 
 **Timeline:** Within 1-2 months after Early Access launch
 
 **Benefits:**
-- Understand systems
-- Self-service debugging
-- Contribute improvements
-- Deep customization
+
+* Understand systems
+* Self-service debugging
+* Contribute improvements
+* Deep customization
 
 ---
 
@@ -798,13 +878,15 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 #### What platforms are supported?
 
 **Current:**
-- ✅ **Windows** (primary platform)
-- 🔧 **Mac** (actively in development)
-- 🔧 **Linux** (actively in development)
+
+* **Windows** (primary platform)
+* **Mac** (actively in development)
+* **Linux** (actively in development)
 
 **Not Planned:**
-- ❌ **VR** (not feasible in near future)
-- ⏳ **Consoles** (TBD for modding)
+
+* **VR** (not feasible in near future)
+* **Consoles** (TBD for modding)
 
 ---
 
@@ -813,10 +895,11 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Yes - Single-Player Offline**
 
 **Features:**
-- ✅ No internet required for single-player
-- ✅ Full game experience offline
-- ✅ Local world saves
-- ❌ Multiplayer requires connection
+
+* No internet required for single-player
+* Full game experience offline
+* Local world saves
+* Multiplayer requires connection
 
 ---
 
@@ -825,10 +908,11 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Uncapped Framerate**
 
 **Optimization:**
-- ⚡ Multi-core support
-- 📊 Performance focus
-- 💻 Accessible to lower-end hardware
-- 🔧 Continuous optimization
+
+* Multi-core support
+* Performance focus
+* Accessible to lower-end hardware
+* Continuous optimization
 
 ---
 
@@ -841,12 +925,14 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Absolutely Not - Firm Commitment**
 
 **Policy:**
-- ❌ No pay-to-win mechanics
-- ✅ Cosmetics only
-- 💰 Low-price cosmetic packs
-- 🎯 Support infrastructure costs
+
+* No pay-to-win mechanics
+* Cosmetics only
+* Low-price cosmetic packs
+* Support infrastructure costs
 
 **Philosophy:**
+
 > *"We are firmly against pay-to-win"* - Hypixel Studios
 
 ---
@@ -856,15 +942,17 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Low-Price Cosmetic Packs**
 
 **Purpose:**
-- 🎨 Support server infrastructure
-- 💰 Optional purchases
-- 👗 Customization options
-- ❌ No gameplay advantages
+
+* Support server infrastructure
+* Optional purchases
+* Customization options
+* No gameplay advantages
 
 **Pricing:**
-- Affordable
-- No aggressive monetization
-- Player-first approach
+
+* Affordable
+* No aggressive monetization
+* Player-first approach
 
 ---
 
@@ -873,15 +961,17 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **EULA/TOS Being Finalized**
 
 **Status:**
-- 📝 Server monetization policies being defined
-- 📊 Terms of Service in development
-- 🤝 Balance between freedom and fairness
-- ⏳ Details coming soon
+
+* Server monetization policies being defined
+* Terms of Service in development
+* Balance between freedom and fairness
+* Details coming soon
 
 **Hosting:**
-- No business agreements required
-- Day 1 server hosting available
-- Just comply with EULA/TOS
+
+* No business agreements required
+* Day 1 server hosting available
+* Just comply with EULA/TOS
 
 ---
 
@@ -894,14 +984,16 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Not Currently - Security Concern**
 
 **Issue:**
-- ❌ No sandboxing solution yet
-- 🛡️ Security risk
-- 🔧 Being researched
+
+* No sandboxing solution yet
+* Security risk
+* Being researched
 
 **Future:**
-- May be added if sandboxing solved
-- Community interest acknowledged
-- No timeline yet
+
+* May be added if sandboxing solved
+* Community interest acknowledged
+* No timeline yet
 
 ---
 
@@ -910,10 +1002,11 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Currently Yes - Being Expanded**
 
 **Status:**
-- ⚠️ Some limitations exist
-- 🔧 Actively being improved
-- 🔄 NoesisGUI transition in progress
-- 📊 More capabilities coming
+
+* Some limitations exist
+* Actively being improved
+* NoesisGUI transition in progress
+* More capabilities coming
 
 **Timeline:** Continuous improvement
 
@@ -924,15 +1017,17 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Sparse Initially**
 
 **Reality:**
-- 📚 Starting incomplete
-- 🔄 Will improve over time
-- 👥 Community questions guide expansion
-- 🤝 Contributions welcome
+
+* Starting incomplete
+* Will improve over time
+* Community questions guide expansion
+* Contributions welcome
 
 **Approach:**
-- Transparent about limitations
-- Honest about readiness
-- Commitment to improvement
+
+* Transparent about limitations
+* Honest about readiness
+* Commitment to improvement
 
 ---
 
@@ -941,16 +1036,18 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **No - Security Design**
 
 **Reason:**
-- 🛡️ No client-side code execution
-- ✅ Prevents exploits
-- 🖥️ Server controls everything
-- 🔒 Security first
+
+* No client-side code execution
+* Prevents exploits
+* Server controls everything
+* Security first
 
 **Benefits:**
-- Safe for all players
-- No malware risk
-- Consistent experience
-- Server-controlled content
+
+* Safe for all players
+* No malware risk
+* Consistent experience
+* Server-controlled content
 
 ---
 
@@ -959,10 +1056,11 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 **Currently Limited**
 
 **Status:**
-- ⚠️ Limited customization options
-- 🔧 Being improved
-- 📊 More options planned
-- ⏳ Future updates
+
+* Limited customization options
+* Being improved
+* More options planned
+* Future updates
 
 ---
 
@@ -973,16 +1071,18 @@ See: [Blockbench Modeling Guide](17-blockbench-modeling-guide.md)
 > *"This comprehensive technical foundation positions Hytale as a secure, extensible platform that empowers creators while maintaining performance, accessibility, and a commitment to continuous improvement."*
 
 **Core Commitments:**
-1. ✅ Security without compromising creativity
-2. ✅ Accessibility for all skill levels
-3. ✅ Continuous improvement
-4. ✅ Community-driven development
-5. ✅ Long-term support
+
+1. Security without compromising creativity
+2. Accessibility for all skill levels
+3. Continuous improvement
+4. Community-driven development
+5. Long-term support
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
+
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

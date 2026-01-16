@@ -17,20 +17,23 @@ This page answers frequently asked questions about Hytale modding, server archit
 **No**, the client cannot be modded directly.
 
 **However:**
-- The server controls how the game and UI looks
-- Works similar to "Resource Packs" in Minecraft
-- The server decides what mods are used
-- Visuals are server-side controlled
-- No client-side mods needed for security and consistency
+
+* The server controls how the game and UI looks
+* Works similar to "Resource Packs" in Minecraft
+* The server decides what mods are used
+* Visuals are server-side controlled
+* No client-side mods needed for security and consistency
 
 **Benefits of Server-Side Modding:**
-- ✅ Join any modded server without downloading external mods
-- ✅ One stable client for all players
-- ✅ Better security (no client modifications)
-- ✅ Unified community experience
-- ✅ Server owners control the experience
+
+* Join any modded server without downloading external mods
+* One stable client for all players
+* Better security (no client modifications)
+* Unified community experience
+* Server owners control the experience
 
 **Philosophy:**
+
 > *"One Community, One Client"* - Hytale avoids the fragmented ecosystem of different modded clients by keeping all modifications server-side.
 
 ---
@@ -44,28 +47,32 @@ This page answers frequently asked questions about Hytale modding, server archit
 ### Understanding Internet Protocols:
 
 **UDP (User Datagram Protocol):**
-- ⚡ Connectionless and fast
-- 📤 Fire-and-forget packets
-- ⚠️ Less reliability (packets can be lost)
+
+* Connectionless and fast
+* Fire-and-forget packets
+* Less reliability (packets can be lost)
 
 **TCP (Transmission Control Protocol):**
-- 🔗 Connection-based
-- 🐢 Slower than UDP
-- ✅ Guaranteed packet delivery
-- ✅ Much more reliability
+
+* Connection-based
+* Slower than UDP
+* Guaranteed packet delivery
+* Much more reliability
 
 **QUIC (Quick UDP Internet Connections):**
-- 🚀 **Hybrid protocol** building on UDP
-- ⚡ Same speed benefits as UDP
-- ✅ Adds reliability layers like TCP
-- 🎮 **Excellent for game development**
-- ⚖️ Blends speed and reliability
+
+* **Hybrid protocol** building on UDP
+* Same speed benefits as UDP
+* Adds reliability layers like TCP
+* **Excellent for game development**
+* Blends speed and reliability
 
 **Why QUIC?**
-- Best of both worlds for multiplayer gaming
-- Modern, efficient protocol
-- Designed for low-latency applications
-- Industry-proven (used by Google, YouTube, etc.)
+
+* Best of both worlds for multiplayer gaming
+* Modern, efficient protocol
+* Designed for low-latency applications
+* Industry-proven (used by Google, YouTube, etc.)
 
 ---
 
@@ -78,26 +85,30 @@ This page answers frequently asked questions about Hytale modding, server archit
 ### Key Points:
 
 **What They Are:**
-- Small data containers (4KB limit)
-- Carry player information between servers
-- Enable seamless server transitions
-- Preserve inventory, stats, and progress
+
+* Small data containers (4KB limit)
+* Carry player information between servers
+* Enable seamless server transitions
+* Preserve inventory, stats, and progress
 
 **What They Are NOT:**
-- ❌ **Not equivalent to BungeeCord or Velocity**
-- ❌ Do not manage network-wide features
-- ❌ Do not support global plugins
-- ❌ DDOS protection would be very difficult for small networks
+
+* **Not equivalent to BungeeCord or Velocity**
+* Do not manage network-wide features
+* Do not support global plugins
+* DDOS protection would be very difficult for small networks
 
 ### Best Use Cases:
 
-**✅ Perfect For:**
-- Small server networks
-- Hub-based setups
-- Server-to-server player transfers
-- Preserving player state across servers
+**Perfect For:**
+
+* Small server networks
+* Hub-based setups
+* Server-to-server player transfers
+* Preserving player state across servers
 
 **Example Scenario:**
+
 ```
 Player finishes dungeon on Server A
   ↓
@@ -106,21 +117,22 @@ Transfer packet created with inventory + stats
 Player moves to Server B (lobby)
   ↓
 Inventory and stats intact
+
 ```
 
 ### Benefits:
 
-- **Lower Server Costs** - Distribute players across multiple servers
-- **Better Performance** - Dedicated servers for specific game modes
-- **Development Focus** - Less time on network infrastructure, more on gameplay
-- **Seamless Experience** - Players don't lose progress when switching servers
+* **Lower Server Costs** - Distribute players across multiple servers
+* **Better Performance** - Dedicated servers for specific game modes
+* **Development Focus** - Less time on network infrastructure, more on gameplay
+* **Seamless Experience** - Players don't lose progress when switching servers
 
 ### Limitations:
 
-- Primarily intended for **smaller servers**
-- Not a full proxy solution like BungeeCord
-- 4KB data limit per transfer
-- Network-wide features require custom implementation
+* Primarily intended for **smaller servers**
+* Not a full proxy solution like BungeeCord
+* 4KB data limit per transfer
+* Network-wide features require custom implementation
 
 ---
 
@@ -131,31 +143,35 @@ Inventory and stats intact
 ### What This Means:
 
 **Hosting Options:**
-- ✅ Host on your own hardware
-- ✅ Use third-party hosting services
-- ✅ Full control over server settings
-- ✅ Install and configure mods
-- ✅ Optimize performance
+
+* Host on your own hardware
+* Use third-party hosting services
+* Full control over server settings
+* Install and configure mods
+* Optimize performance
 
 ### Benefits of Dedicated Servers:
 
 **Complete Control:**
-- Server settings and configurations
-- Mod installation and management
-- Performance tuning and optimization
-- Backup and maintenance schedules
+
+* Server settings and configurations
+* Mod installation and management
+* Performance tuning and optimization
+* Backup and maintenance schedules
 
 **Flexibility:**
-- Choose your hosting provider
-- Scale resources as needed
-- Run custom plugins and packs
-- Full administrative access
+
+* Choose your hosting provider
+* Scale resources as needed
+* Run custom plugins and packs
+* Full administrative access
 
 **Professional Options:**
-- Enterprise-grade hosting
-- Custom hardware configurations
-- Advanced networking setups
-- Professional support options
+
+* Enterprise-grade hosting
+* Custom hardware configurations
+* Advanced networking setups
+* Professional support options
 
 ### Hosting Methods:
 
@@ -175,45 +191,52 @@ Inventory and stats intact
 ### Current Status:
 
 **PC Platforms:**
-- ✅ Windows
-- ✅ macOS
-- ✅ Linux
+
+* Windows
+* macOS
+* Linux
 
 **Console Support:**
-- ⏳ Not confirmed for modding
-- 🎮 Game may come to consoles in the future
-- 🔧 Modding tools designed for PC
+
+* Not confirmed for modding
+* Game may come to consoles in the future
+* Modding tools designed for PC
 
 ### Why PC-First?
 
 **Technical Reasons:**
-- Modding requires file system access
-- Console platforms have restrictions
-- Development tools are PC-based
-- Testing and iteration easier on PC
+
+* Modding requires file system access
+* Console platforms have restrictions
+* Development tools are PC-based
+* Testing and iteration easier on PC
 
 **Platform Limitations:**
-- Console manufacturers restrict modifications
-- Certification processes are complex
-- Updates and patches have approval delays
-- File access is limited or prohibited
+
+* Console manufacturers restrict modifications
+* Certification processes are complex
+* Updates and patches have approval delays
+* File access is limited or prohibited
 
 ### Future Possibilities:
 
 While current modding support is PC-focused, the team hasn't ruled out future console support for:
-- Playing on modded servers (server-side mods)
-- Official mod marketplace
-- Curated content packs
+
+* Playing on modded servers (server-side mods)
+* Official mod marketplace
+* Curated content packs
 
 **Stay Updated:**
-- Follow official Hytale announcements
-- Join the [Official Discord](https://discord.gg/hytale)
-- Check the [Hytale Blog](https://hytale.com/news)
+
+* Follow official Hytale announcements
+* Join the [Official Discord](https://discord.gg/hytale)
+* Check the [Hytale Blog](https://hytale.com/news)
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
+
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

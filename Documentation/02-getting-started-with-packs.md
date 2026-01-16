@@ -1,13 +1,14 @@
 ﻿# Getting Started with Packs
 
-**Source:** [Getting Started with Packs](https://hytale.com/)  
+**Source:** [Getting Started with Packs](https://hytale.com/)
+
 **Last Modified:** Friday, January 16, 2026 at 12:47 PM
 
 ---
 
 ## Overview
 
-This guide walks you through creating your first Hytale Pack. Packs are asset/content packs that allow you to add new blocks, items, mobs, and behavior to Hytale without requiring coding knowledge.[web:3]
+This guide walks you through creating your first Hytale Pack. Packs are asset/content packs that allow you to add new blocks, items, mobs, and behavior to Hytale without requiring coding knowledge.
 
 ---
 
@@ -20,8 +21,10 @@ First, create a folder for your Pack:
 Replace `YourPackName` with the desired name of your Pack.
 
 ### Example:
+
 ```bash
 C:\Users\YourUsername\AppData\Roaming\Hytale\UserData\Mods\MyFirstPack
+
 ```
 
 ## Asset Editor (Alternative)
@@ -35,7 +38,7 @@ Use the in-game Asset Editor for a quicker start:
 5. Enter your pack details.
 6. Proceed to Step 3.
 
-> **Note:** Check our [YouTube Tutorials](00-youtube-tutorials.md) for more on the Asset Editor.
+> **Note:** Check our [YouTube Tutorials](https://www.google.com/search?q=00-youtube-tutorials.md) for more on the Asset Editor.
 
 ---
 
@@ -64,22 +67,23 @@ Create a `manifest.json` file in your Pack folder. This file contains metadata a
   "OptionalDependencies": {},
   "DisabledByDefault": false
 }
+
 ```
 
 ### Manifest Fields Explained:
 
-| Field                  | Description                                      | Required |
-|------------------------|--------------------------------------------------|----------|
-| `Group`                | Your organization or group name                  | Yes      |
-| `Name`                 | The name of your Pack                            | Yes      |
-| `Version`              | Version number (semantic versioning)             | Yes      |
-| `Description`          | A brief description of what your Pack does       | Yes      |
-| `Authors`              | Array of author information                      | Yes      |
-| `Website`              | Your website or project page                     | Optional |
-| `ServerVersion`        | Compatible server version (`*` for all)          | Yes      |
-| `Dependencies`         | Packs required for this to work                  | Optional |
-| `OptionalDependencies` | Packs that enhance but aren't required           | Optional |
-| `DisabledByDefault`    | Whether Pack loads automatically                 | Optional |
+| Field | Description | Required |
+| --- | --- | --- |
+| `Group` | Your organization or group name | Yes |
+| `Name` | The name of your Pack | Yes |
+| `Version` | Version number (semantic versioning) | Yes |
+| `Description` | A brief description of what your Pack does | Yes |
+| `Authors` | Array of author information | Yes |
+| `Website` | Your website or project page | Optional |
+| `ServerVersion` | Compatible server version (`*` for all) | Yes |
+| `Dependencies` | Packs required for this to work | Optional |
+| `OptionalDependencies` | Packs that enhance but aren't required | Optional |
+| `DisabledByDefault` | Whether Pack loads automatically | Optional |
 
 ---
 
@@ -88,30 +92,36 @@ Create a `manifest.json` file in your Pack folder. This file contains metadata a
 Create two main folders inside your Pack directory:
 
 ### Folder Structure:
+
 ```bash
 ./AppData/Roaming/Hytale/UserData/Packs/YourPackName/
 |-- manifest.json
 |-- Common/
 `-- Server/
+
 ```
 
 ### Common Folder
+
 **Path:** `./AppData/Roaming/Hytale/UserData/Packs/YourPackName/Common`
 
 **Handles:**
-- Models
-- Textures
-- Visual assets
+
+* Models
+* Textures
+* Visual assets
 
 ### Server Folder
+
 **Path:** `./AppData/Roaming/Hytale/UserData/Packs/YourPackName/Server`
 
 **Handles:**
-- Item creation
-- Block creation
-- Translations
-- Particle creation
-- Game logic and behavior
+
+* Item creation
+* Block creation
+* Translations
+* Particle creation
+* Game logic and behavior
 
 ---
 
@@ -131,14 +141,16 @@ MyFirstPack/
     |-- Languages/
     |   `-- en-US/
     `-- Block/
+
 ```
 
 > **Note:** This shows key folders; full structures vary. For a complete overview:
->
 > 1. Open the Hytale launcher.
 > 2. Click **Settings** (top left).
 > 3. Select **Open Directory**.
 > 4. Navigate to `install\release\package\game\latest` and explore `Assets.zip`.
+> 
+> 
 
 ---
 
@@ -157,5 +169,8 @@ To use your Pack in Hytale:
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
+
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)
+
+Would you like me to clean up any other guides in this series for you?

@@ -1,6 +1,7 @@
 ﻿# Block State Changing
 
-**Source:** [Block State Changing](https://hytale.com/)  
+**Source:** [Block State Changing](https://hytale.com/)
+
 **Last Modified:** Friday, January 9, 2026 at 12:01 PM
 
 ---
@@ -14,10 +15,11 @@ This is a basic beginner's guide on how to modify block state changes and cyclin
 ## What are Block States?
 
 Block states allow a single block to have multiple configurations or modes:
-- **Lamps** that can be on or off
-- **Doors** that can be open or closed
-- **Machines** that can be active or inactive
-- **Any block** with multiple visual or functional states
+
+* **Lamps** that can be on or off
+* **Doors** that can be open or closed
+* **Machines** that can be active or inactive
+* **Any block** with multiple visual or functional states
 
 ---
 
@@ -50,15 +52,16 @@ Define an interaction that will trigger the state change. This tells the game wh
     ]
   }
 }
+
 ```
 
 ### Interaction Properties Explained:
 
 | Property | Description |
-|----------|-------------|
+| --- | --- |
 | `"Use"` | The interaction type (player right-clicks/uses the block) |
 | `"Type": "ChangeState"` | Tells the game to change the block's state |
-| `"Changes"` | Maps current state –†’ next state |
+| `"Changes"` | Maps current state -> next state |
 
 ### State Cycling Logic:
 
@@ -68,9 +71,10 @@ Define an interaction that will trigger the state change. This tells the game wh
   "On": "Off",       // When "On", change to "Off"
   "Off": "On"        // When "Off", change to "On"
 }
+
 ```
 
-This creates a toggle behavior: On –†’ Off –†’ On –†’ Off...
+This creates a toggle behavior: On -> Off -> On -> Off...
 
 ---
 
@@ -103,12 +107,13 @@ Now define what each state looks like and behaves like:
     }
   }
 }
+
 ```
 
 ### State Properties:
 
 | Property | Description | Example |
-|----------|-------------|---------|
+| --- | --- | --- |
 | `InteractionHint` | Tooltip shown when hovering | `"interactionHints.turnoff"` |
 | `CustomModel` | Model file for this state | `"Blocks/model_one.blockymodel"` |
 | `CustomModelTexture` | Texture(s) for this state | Array of texture objects |
@@ -177,6 +182,7 @@ Here's a full example of a block with state changing:
     }
   }
 }
+
 ```
 
 ---
@@ -193,6 +199,7 @@ You can add additional properties to each state:
   "CustomModel": "Blocks/model_one.blockymodel",
   "BlockSoundSetId": "Metal_On"
 }
+
 ```
 
 ### Animations
@@ -203,6 +210,7 @@ You can add additional properties to each state:
   "CustomModel": "Blocks/model_one.blockymodel",
   "CustomModelAnimation": "Blocks/Animations/Light_On.blockyanim"
 }
+
 ```
 
 ### Particles
@@ -213,6 +221,7 @@ You can add additional properties to each state:
   "CustomModel": "Blocks/model_one.blockymodel",
   "ParticleColor": "#ffff00"
 }
+
 ```
 
 ---
@@ -237,6 +246,7 @@ You can have more than two states:
     ]
   }
 }
+
 ```
 
 Then define all three states:
@@ -249,6 +259,7 @@ Then define all three states:
     "State3": { /* ... */ }
   }
 }
+
 ```
 
 ---
@@ -262,6 +273,7 @@ Remember to add translations for your interaction hints:
 ```
 turnon = Turn On
 turnoff = Turn Off
+
 ```
 
 ---
@@ -285,6 +297,7 @@ YourPackName/
     `-- Languages/
         `-- en-US/
             `-- interactionHints.lang
+
 ```
 
 ---
@@ -304,30 +317,33 @@ YourPackName/
 ## Troubleshooting
 
 ### States don't change:
-- Verify `"Type": "ChangeState"` is set correctly
-- Check that state names match in `Changes` and `Definitions`
-- Ensure interaction type is correct (`"Use"`)
+
+* Verify `"Type": "ChangeState"` is set correctly
+* Check that state names match in `Changes` and `Definitions`
+* Ensure interaction type is correct (`"Use"`)
 
 ### Wrong initial state:
-- Check `"default"` value in `Changes`
-- Verify the default state is defined in `Definitions`
+
+* Check `"default"` value in `Changes`
+* Verify the default state is defined in `Definitions`
 
 ### Models/textures don't update:
-- Verify model paths are correct for each state
-- Check that texture paths exist
-- Ensure models are properly formatted `.blockymodel` files
+
+* Verify model paths are correct for each state
+* Check that texture paths exist
+* Ensure models are properly formatted `.blockymodel` files
 
 ### Interaction hints don't show:
-- Verify translation keys exist in `interactionHints.lang`
-- Check that language file is in correct location
-- Ensure no typos in translation keys
+
+* Verify translation keys exist in `interactionHints.lang`
+* Check that language file is in correct location
+* Ensure no typos in translation keys
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
 
-
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

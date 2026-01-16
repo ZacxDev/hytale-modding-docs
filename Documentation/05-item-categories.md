@@ -1,6 +1,7 @@
 ﻿# Item Categories
 
-**Source:** [Item Categories](https://hytale.com/)  
+**Source:** [Item Categories](https://hytale.com/)
+
 **Last Modified:** Friday, January 9, 2026 at 12:01 PM
 
 ---
@@ -14,10 +15,11 @@ Item Categories are the different tabs shown in the Creative Menu. This guide pr
 ## What are Item Categories?
 
 Item Categories allow you to:
-- Create custom tabs in the Creative Menu
-- Organize items and blocks logically
-- Add subcategories for better organization
-- Customize icons for each category
+
+* Create custom tabs in the Creative Menu
+* Organize items and blocks logically
+* Add subcategories for better organization
+* Customize icons for each category
 
 ---
 
@@ -48,6 +50,7 @@ Create a JSON file for your custom category:
     }
   ]
 }
+
 ```
 
 ---
@@ -57,7 +60,7 @@ Create a JSON file for your custom category:
 ### Main Category Properties
 
 | Property | Description | Example |
-|----------|-------------|---------|
+| --- | --- | --- |
 | `Id` | Unique identifier for the category | `"MyCategory"` |
 | `Name` | Translation key for tooltip text | `"ui.itemcategory.mycategory"` |
 | `Icon` | Path to the category icon | `"Icons/ItemCategories/MyCategory.png"` |
@@ -67,9 +70,10 @@ Create a JSON file for your custom category:
 ### Subcategory Properties (Children)
 
 Each child/subcategory has:
-- `Id` - Unique identifier for the subcategory
-- `Name` - Translation key for the subcategory tooltip
-- `Icon` - Path to the subcategory icon
+
+* `Id` - Unique identifier for the subcategory
+* `Name` - Translation key for the subcategory tooltip
+* `Icon` - Path to the subcategory icon
 
 ---
 
@@ -85,12 +89,14 @@ Define the display names for your categories by creating translation files:
 itemcategory.mycategory = My Custom Category
 itemcategory.example_category = Example Tab One
 itemcategory.example_category_two = Example Tab Two
+
 ```
 
 ### Key Points:
-- Translation keys in JSON start with `"ui."` but the `.lang` file omits this prefix
-- The text after `=` is what displays when hovering over the category icon
-- Create files for other languages (e.g., `es-ES/ui.lang`) for internationalization
+
+* Translation keys in JSON start with `"ui."` but the `.lang` file omits this prefix
+* The text after `=` is what displays when hovering over the category icon
+* Create files for other languages (e.g., `es-ES/ui.lang`) for internationalization
 
 ---
 
@@ -98,18 +104,18 @@ itemcategory.example_category_two = Example Tab Two
 
 Create icon images for your categories:
 
-**Main Category Icon Path:**  
-`YourPackName/Common/Icons/ItemCategories/MyCategory.png`
+**Main Category Icon Path:** `YourPackName/Common/Icons/ItemCategories/MyCategory.png`
 
-**Subcategory Icon Paths:**  
-`YourPackName/Common/Icons/ItemCategories/My_Example_Category.png`  
+**Subcategory Icon Paths:** `YourPackName/Common/Icons/ItemCategories/My_Example_Category.png`
+
 `YourPackName/Common/Icons/ItemCategories/My_Example_Category_Two.png`
 
 ### Icon Requirements:
-- **Format:** PNG with transparency support
-- **Recommended Size:** 32x32 pixels
-- **Style:** Should match Hytale's UI aesthetic
-- **Naming:** Must match exactly the path in your JSON file
+
+* **Format:** PNG with transparency support
+* **Recommended Size:** 32x32 pixels
+* **Style:** Should match Hytale's UI aesthetic
+* **Naming:** Must match exactly the path in your JSON file
 
 ---
 
@@ -131,12 +137,14 @@ To add your custom blocks or items to your new categories, edit the item/block J
   ],
   // ... rest of block properties
 }
+
 ```
 
 ### Category Path Format:
-- **Main Category Only:** `"MyCategory"`
-- **Subcategory:** `"MyCategory.Example_Category"`
-- **Multiple Categories:** Add multiple strings to the array
+
+* **Main Category Only:** `"MyCategory"`
+* **Subcategory:** `"MyCategory.Example_Category"`
+* **Multiple Categories:** Add multiple strings to the array
 
 ### Example - Multiple Categories:
 
@@ -146,6 +154,7 @@ To add your custom blocks or items to your new categories, edit the item/block J
   "Blocks.Rocks",
   "MyCategory.Example_Category_Two"
 ]
+
 ```
 
 ---
@@ -157,12 +166,13 @@ To use Vanilla categories in your items, look in the game's asset files:
 **Path:** `Assets/Server/Item/Category/CreativeLibrary`
 
 ### Common Vanilla Categories:
-- `Blocks.Rocks`
-- `Blocks.Wood`
-- `Blocks.Nature`
-- `Items.Tools`
-- `Items.Weapons`
-- `Items.Food`
+
+* `Blocks.Rocks`
+* `Blocks.Wood`
+* `Blocks.Nature`
+* `Items.Tools`
+* `Items.Weapons`
+* `Items.Food`
 
 ---
 
@@ -184,9 +194,10 @@ YourPackName/
     |   |       `-- MyItemCategory.json
     |   `-- Items/
     |       `-- your_block.json
-    `-- Languages/
-        `-- en-US/
-            `-- ui.lang
+    |-- Languages/
+    |   `-- en-US/
+    |       `-- ui.lang
+
 ```
 
 ---
@@ -195,14 +206,16 @@ YourPackName/
 
 The `Order` property determines the position of your category in the Creative Menu:
 
-- **Lower numbers** = Further left
-- **Higher numbers** = Further right
-- **Vanilla categories** typically use orders 0-5
-- **Custom categories** should use 6+
+* **Lower numbers** = Further left
+* **Higher numbers** = Further right
+* **Vanilla categories** typically use orders 0-5
+* **Custom categories** should use 6+
 
 ### Example Order:
+
 ```json
 "Order": 6,  // Appears after vanilla categories
+
 ```
 
 ---
@@ -221,32 +234,35 @@ The `Order` property determines the position of your category in the Creative Me
 ## Troubleshooting
 
 ### Category doesn't appear:
-- Verify JSON syntax is valid
-- Check that icon paths are correct
-- Ensure translation file exists
-- Verify Pack is enabled in world
+
+* Verify JSON syntax is valid
+* Check that icon paths are correct
+* Ensure translation file exists
+* Verify Pack is enabled in world
 
 ### Icon is missing:
-- Check icon file exists at specified path
-- Verify PNG format
-- Ensure path in JSON matches file location exactly
+
+* Check icon file exists at specified path
+* Verify PNG format
+* Ensure path in JSON matches file location exactly
 
 ### Items don't appear in category:
-- Verify category ID matches in both files
-- Check subcategory path format: `"MainCategory.SubCategory"`
-- Ensure item JSON includes `Categories` array
+
+* Verify category ID matches in both files
+* Check subcategory path format: `"MainCategory.SubCategory"`
+* Ensure item JSON includes `Categories` array
 
 ### Tooltip shows translation key:
-- Check `ui.lang` file exists
-- Verify translation key matches (without `ui.` prefix)
-- Ensure no typos in the key
+
+* Check `ui.lang` file exists
+* Verify translation key matches (without `ui.` prefix)
+* Ensure no typos in the key
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
 
-
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

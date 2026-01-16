@@ -1,6 +1,7 @@
 ﻿# Adding a Block
 
-**Source:** [Adding a Block](https://hytale.com/)  
+**Source:** [Adding a Block](https://hytale.com/)
+
 **Last Modified:** Friday, January 9, 2026 at 12:01 PM
 
 ---
@@ -14,9 +15,10 @@ This guide teaches you how to add a custom block to Hytale using Packs. You'll l
 ## Prerequisites
 
 Before starting, ensure you have:
-- Created a Pack folder structure (see "Getting Started with Packs")
-- A `manifest.json` file in your Pack root
-- `Common/` and `Server/` folders created
+
+* Created a Pack folder structure (see "Getting Started with Packs")
+* A `manifest.json` file in your Pack root
+* `Common/` and `Server/` folders created
 
 ---
 
@@ -67,6 +69,7 @@ Create a JSON file for your block in the Items directory:
     }
   ]
 }
+
 ```
 
 ---
@@ -76,7 +79,7 @@ Create a JSON file for your block in the Items directory:
 ### Top-Level Properties
 
 | Property | Description | Example |
-|----------|-------------|---------|
+| --- | --- | --- |
 | `TranslationProperties.Name` | Translation key for block name | `"server.Example_Block.name"` |
 | `MaxStack` | Maximum stack size in inventory | `100` |
 | `Icon` | Path to inventory icon | `"Icons/ItemsGenerated/Example_Block.png"` |
@@ -87,7 +90,7 @@ Create a JSON file for your block in the Items directory:
 ### BlockType Properties
 
 | Property | Description | Options/Example |
-|----------|-------------|-----------------|
+| --- | --- | --- |
 | `Material` | Block material type | `"Solid"`, `"Liquid"`, `"Gas"` |
 | `DrawType` | Rendering method | `"Cube"`, `"Cross"`, `"Model"` |
 | `Group` | Block group for behavior | `"Stone"`, `"Wood"`, `"Dirt"` |
@@ -105,6 +108,7 @@ Create a JSON file for your block in the Items directory:
     "ItemId": "Rock_Stone_Cobble"  // Item dropped when broken
   }
 }
+
 ```
 
 ### Texture Properties
@@ -115,9 +119,11 @@ Create a JSON file for your block in the Items directory:
     "All": "BlockTextures/Example_Block.png"  // Same texture all sides
   }
 ]
+
 ```
 
 **Alternative - Different Textures Per Side:**
+
 ```json
 "Textures": [
   {
@@ -126,6 +132,7 @@ Create a JSON file for your block in the Items directory:
     "Sides": "BlockTextures/Example_Block_Sides.png"
   }
 ]
+
 ```
 
 ---
@@ -137,12 +144,14 @@ Create texture files in the Common folder:
 **Texture Path:** `./AppData/Roaming/Hytale/UserData/Packs/YourPackName/Common/BlockTextures/your_block_texture.png`
 
 ### Texture Requirements:
-- **Format:** PNG
-- **Recommended Size:** 16x16 or 32x32 pixels
-- **Transparency:** Supported (for non-solid blocks)
-- **Naming:** Match the path in your block JSON
+
+* **Format:** PNG
+* **Recommended Size:** 16x16 or 32x32 pixels
+* **Transparency:** Supported (for non-solid blocks)
+* **Naming:** Match the path in your block JSON
 
 ### Icon Path:
+
 Also create an icon for the inventory:
 
 **Icon Path:** `./AppData/Roaming/Hytale/UserData/Packs/YourPackName/Common/Icons/ItemsGenerated/Example_Block.png`
@@ -159,6 +168,7 @@ Create a translation file to define the block's display name:
 
 ```
 Example_Block.name = Example Block
+
 ```
 
 The key (`Example_Block.name`) must match the `TranslationProperties.Name` in your block JSON (without the `"server."` prefix).
@@ -166,10 +176,11 @@ The key (`Example_Block.name`) must match the `TranslationProperties.Name` in yo
 ### Multiple Languages:
 
 Create additional `.lang` files for other languages:
-- `es-ES/server.lang` - Spanish
-- `fr-FR/server.lang` - French
-- `de-DE/server.lang` - German
-- etc.
+
+* `es-ES/server.lang` - Spanish
+* `fr-FR/server.lang` - French
+* `de-DE/server.lang` - German
+* etc.
 
 ---
 
@@ -180,41 +191,41 @@ Now you can visually edit your block using the in-game Asset Editor:
 ### Steps to Access Asset Editor:
 
 1. **Add Pack to World:**
-   - Open Hytale
-   - Visit the "Worlds" tab
-   - Right-click on your world
-   - Toggle on your Pack
+* Open Hytale
+* Visit the "Worlds" tab
+* Right-click on your world
+* Toggle on your Pack
 
-![Adding Pack to World](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9242438698/original/W1aHFifMfGPRtqp7DTqLiudGZ7IvyRWPkA.png?1767794986)
 
 2. **Enter the World:**
-   - Join the world with your Pack enabled
+* Join the world with your Pack enabled
+
 
 3. **Open Asset Editor:**
-   - Open your inventory
-   - Click on the "Creation Tools" tab
-   - Click on "Asset Editor"
+* Open your inventory
+* Click on the "Creation Tools" tab
+* Click on "Asset Editor"
 
-![Asset Editor Interface](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9242488837/original/YyJgcUx4zPCJxESiFE5CuhoJljgSverQ8w.png?1767864858)
 
 4. **Edit Your Block:**
-   - Select your Pack from the list
-   - Find your block in the items list
-   - Modify any settings you desire
-   - Changes are saved automatically
+* Select your Pack from the list
+* Find your block in the items list
+* Modify any settings you desire
+* Changes are saved automatically
 
-![Asset Editor Block Settings](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9242488840/original/tPkYp5a_xw0dNDhWjiue43_Q9y9iD72XJw.png?1767864858)
+
 
 ### What You Can Edit in Asset Editor:
-- Material properties
-- Breaking behavior
-- Sounds
-- Particle effects
-- Textures (paths)
-- Drop items
-- Stack size
-- Categories
-- And much more!
+
+* Material properties
+* Breaking behavior
+* Sounds
+* Particle effects
+* Textures (paths)
+* Drop items
+* Stack size
+* Categories
+* And much more!
 
 ---
 
@@ -236,6 +247,7 @@ YourPackName/
     `-- Languages/
         `-- en-US/
             `-- server.lang
+
 ```
 
 ---
@@ -254,26 +266,28 @@ YourPackName/
 ## Troubleshooting
 
 ### Block doesn't appear in game:
-- Verify `manifest.json` is correct
-- Check that Pack is enabled in world settings
-- Ensure JSON syntax is valid (use a JSON validator)
+
+* Verify `manifest.json` is correct
+* Check that Pack is enabled in world settings
+* Ensure JSON syntax is valid (use a JSON validator)
 
 ### Texture is missing/pink:
-- Verify texture path matches JSON exactly
-- Check texture file exists at specified path
-- Ensure texture is PNG format
+
+* Verify texture path matches JSON exactly
+* Check texture file exists at specified path
+* Ensure texture is PNG format
 
 ### Translation shows key instead of name:
-- Verify translation key matches in JSON and `.lang` file
-- Check that `en-US` folder and `server.lang` file exist
-- Ensure no typos in translation key
+
+* Verify translation key matches in JSON and `.lang` file
+* Check that `en-US` folder and `server.lang` file exist
+* Ensure no typos in translation key
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
 
-
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

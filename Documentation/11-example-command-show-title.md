@@ -1,21 +1,20 @@
 # Example Command to Show Title
 
-**Source:** [Example Command to Show Title](https://hytale.com/)  
+**Source:** [Official Hytale Resources](https://hytale.com/)
+
 **Last Modified:** Friday, January 9, 2026 at 12:02 PM
 
 ---
 
 ## Overview
 
-This is an example of a command that will showcase a title to the player in-game. This tutorial demonstrates how to create custom commands that display event titles using Hytale's plugin API.
+This tutorial demonstrates how to create custom commands that display event titles using Hytale's plugin API. Titles are a powerful way to provide visual feedback to players during events, achievements, or system announcements.
 
 ---
 
 ## Example Result
 
-When the command is executed, it displays a title message to the player:
-
-![Title Display Example](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9242449572/original/qpy61JYEhjxNzoghMOA_A4U6ldIDP02_ng.png?1767803050)
+When executed, the command displays a high-impact title and subtitle directly on the player's screen.
 
 ---
 
@@ -27,22 +26,25 @@ When the command is executed, it displays a title message to the player:
 public class ModdedCommand extends CommandBase {
     
     public ModdedCommand() {
+        // Name, Description, Requires OP
         super("moddedcommand", "A test command", false);
     }
     
     @Override
     protected void executeSync(@Nonnull CommandContext commandContext) {
+        // Ensure the sender is a player before proceeding
         commandContext.senderAsPlayer().getWorld().execute(() -> {
             EventTitleUtil.showEventTitleToPlayer(
                 commandContext.senderAsPlayer().getReference(),
-                Message.raw("It's modded!"),
-                Message.raw("Yeppers"),
-                true,
+                Message.raw("It's modded!"), // Main Title
+                Message.raw("Yeppers"),      // Subtitle
+                true,                        // Is Major (Shows gold bars/animation)
                 commandContext.senderAsPlayer().getWorld().getEntityStore().getStore()
             );
         });
     }
 }
+
 ```
 
 ---
@@ -51,156 +53,77 @@ public class ModdedCommand extends CommandBase {
 
 ### 1. Command Constructor
 
-```java
-public ModdedCommand() {
-    super("moddedcommand", "A test command", false);
-}
-```
+The `super` call defines how players interact with the command in the chat console.
 
-**Parameters:**
-- `"moddedcommand"` - The command name (players type `/moddedcommand`)
-- `"A test command"` - Description shown in help
-- `false` - Whether the command requires operator permissions
+* **`"moddedcommand"`**: The trigger (e.g., `/moddedcommand`).
+* **`"A test command"`**: The tooltip shown in the `/help` menu.
+* **`false`**: Setting this to `true` would restrict the command to server operators.
 
----
+### 2. The Execute Method
 
-### 2. Execute Method
+* **`executeSync`**: This method runs on the main server thread, making it safe to access world data.
+* **`CommandContext`**: Contains data about the `sender`, the `world`, and any `arguments` passed.
 
-```java
-@Override
-protected void executeSync(@Nonnull CommandContext commandContext) {
-    // Command logic here
-}
-```
+### 3. EventTitleUtil Parameters
 
-- **`executeSync`** - Executes the command synchronously on the server thread
-- **`CommandContext`** - Provides context about who ran the command and where
+The `EventTitleUtil` class handles the packet logic for you:
 
----
-
-### 3. Display Title
-
-```java
-commandContext.senderAsPlayer().getWorld().execute(() -> {
-    EventTitleUtil.showEventTitleToPlayer(
-        commandContext.senderAsPlayer().getReference(),
-        Message.raw("It's modded!"),      // Main title
-        Message.raw("Yeppers"),            // Subtitle
-        true,                               // Show animation
-        commandContext.senderAsPlayer().getWorld().getEntityStore().getStore()
-    );
-});
-```
-
-**EventTitleUtil.showEventTitleToPlayer() Parameters:**
-1. **Player Reference** - The player to show the title to
-2. **Main Title** - Large text displayed (e.g., "It's modded!")
-3. **Subtitle** - Smaller text below the title (e.g., "Yeppers")
-4. **Show Animation** - Whether to animate the title appearance
-5. **Entity Store** - The world's entity storage system
+* **Player Reference**: Obtained via `senderAsPlayer().getReference()`.
+* **Main/Subtitle**: Wrapped in `Message.raw()` to handle plain text.
+* **Is Major**: If set to `true`, the title displays with "major" styling (often including decorative bars and a more pronounced animation).
+* **Entity Store**: Required for the server to track the display lifecycle relative to the player entity.
 
 ---
 
 ## Registering the Command
 
-To use this command in your plugin, register it in your main plugin class:
+To activate your command, register it within the `onEnable()` method of your main plugin class.
 
 ```java
 public class ExamplePlugin extends JavaPlugin {
     
     @Override
     public void onEnable() {
-        // Register the command
+        // Register the command with the server's command manager
         getServer().getCommandManager().registerCommand(new ModdedCommand());
         
-        getLogger().info("Example plugin enabled!");
+        getLogger().info("Modded Title Plugin has been enabled!");
     }
 }
+
 ```
 
 ---
 
-## Usage
+## Customization & Styling
 
-Once your plugin is loaded:
+### Using Colors
 
-1. **In-game**, type: `/moddedcommand`
-2. The title "It's modded!" with subtitle "Yeppers" will appear on your screen
-
----
-
-## Customization Ideas
-
-### Change the Messages
+You can use standard Hytale color codes (e.g., `&6` for Gold, `&b` for Aqua) within your messages:
 
 ```java
-Message.raw("Welcome!"),
-Message.raw("To the server")
+Message.raw("&6CONGRATULATIONS!")
+Message.raw("&bYou found a secret area.")
+
 ```
 
-### Add Colors (if supported)
+### Formatting the Duration
 
-```java
-Message.raw("§6Golden Title!"),
-Message.raw("§bBlue Subtitle")
-```
-
-### Make it Player-Specific
-
-```java
-Message.raw("Hello, " + commandContext.senderAsPlayer().getName() + "!"),
-Message.raw("Welcome back!")
-```
-
----
-
-## Related Commands
-
-You can use similar patterns for:
-- **Action Bar Messages** - Text above the hotbar
-- **Chat Messages** - Standard chat output
-- **Boss Bars** - Progress bars at the top of the screen
-- **Particle Effects** - Visual effects for commands
+While the basic utility uses default timings, you can also specify fade-in, stay, and fade-out durations using advanced overloads of the `EventTitleUtil` (if available in your API version).
 
 ---
 
 ## Best Practices
 
-1. **Keep titles short** - Long text may be cut off
-2. **Use clear messages** - Players should understand what happened
-3. **Consider timing** - Don't spam titles too frequently
-4. **Test thoroughly** - Ensure titles display correctly
-5. **Handle errors** - Check if the sender is a player before casting
-
----
-
-## Troubleshooting
-
-### Title doesn't appear:
-- Ensure the player is online
-- Check that the command is registered properly
-- Verify the player has the required permissions
-
-### Command not found:
-- Make sure the plugin is loaded (`/plugins` command)
-- Check that the command is registered in `onEnable()`
-- Verify the plugin's `manifest.json` is correct
-
-### Errors in console:
-- Check that all imports are correct
-- Ensure you're using the correct API version
-- Verify the player reference is valid
-
----
-
-## Credits
-
-Thank you to **Rick** for helping create this tutorial.
+* **Thread Safety**: Always wrap world-altering or visual logic in a `world.execute()` block to ensure it runs on the correct synchronization cycle.
+* **Player Validation**: Before calling `senderAsPlayer()`, verify the sender is actually a player (and not the console) to avoid `NullPointerExceptions`.
+* **Clarity**: Avoid using titles for frequent spam; they are best reserved for significant milestones to maintain their visual impact.
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
+
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

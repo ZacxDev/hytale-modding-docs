@@ -1,6 +1,7 @@
 ﻿# Custom Config Files
 
-**Source:** [Custom Config Files](https://hytale.com/)  
+**Source:** [Custom Config Files](https://hytale.com/)
+
 **Last Modified:** Friday, January 9, 2026 at 12:01 PM
 
 ---
@@ -14,29 +15,32 @@ This guide details how to create and register custom configuration files for you
 ## What are Config Files?
 
 Configuration files:
-- Store plugin settings in JSON format
-- Allow users to customize plugin behavior
-- Persist across game sessions
-- Use Hytale's Codec system for serialization/deserialization
-- Auto-generate with default values if missing
+
+* Store plugin settings in JSON format
+* Allow users to customize plugin behavior
+* Persist across game sessions
+* Use Hytale's Codec system for serialization/deserialization
+* Auto-generate with default values if missing
 
 ---
 
 ## Understanding the Codec System
 
 Hytale uses **Codecs** to serialize (save) and deserialize (load) data:
-- **Codec:** Defines how data is converted to/from JSON
-- **BuilderCodec:** Fluent API for building complex codecs
-- **KeyedCodec:** Maps a JSON key to a Java field
+
+* **Codec:** Defines how data is converted to/from JSON
+* **BuilderCodec:** Fluent API for building complex codecs
+* **KeyedCodec:** Maps a JSON key to a Java field
 
 ---
 
 ## Step 1: Create the Config Class
 
 The configuration class acts as a data model that defines:
-- Variables to be saved in JSON
-- How they are serialized/deserialized
-- Default values
+
+* Variables to be saved in JSON
+* How they are serialized/deserialized
+* Default values
 
 ### Basic Config Class Example:
 
@@ -64,6 +68,7 @@ public class ExampleConfig {
         return LuckIncreaseChance;
     }
 }
+
 ```
 
 ---
@@ -74,27 +79,35 @@ Let's break down the codec definition:
 
 ```java
 BuilderCodec.builder(ExampleConfig.class, ExampleConfig::new)
+
 ```
-- **First parameter:** The config class type
-- **Second parameter:** Constructor reference (how to create new instances)
+
+* **First parameter:** The config class type
+* **Second parameter:** Constructor reference (how to create new instances)
 
 ```java
 .append(new KeyedCodec<Double>("LuckIncreaseChance", Codec.DOUBLE),
         (exConfig, aDouble, extraInfo) -> exConfig.LuckIncreaseChance = aDouble,  // Setter
         (exConfig, extraInfo) -> exConfig.LuckIncreaseChance)                     // Getter
+
 ```
-- **KeyedCodec:** Maps JSON key to field
-  - `"LuckIncreaseChance"` - JSON key name
-  - `Codec.DOUBLE` - Data type codec
-- **Setter lambda:** How to set the value when loading
-- **Getter lambda:** How to get the value when saving
+
+* **KeyedCodec:** Maps JSON key to field
+* `"LuckIncreaseChance"` - JSON key name
+* `Codec.DOUBLE` - Data type codec
+
+
+* **Setter lambda:** How to set the value when loading
+* **Getter lambda:** How to get the value when saving
 
 ```java
 .add()
 .build();
+
 ```
-- **add():** Finalizes the current field
-- **build():** Completes the codec
+
+* **add():** Finalizes the current field
+* **build():** Completes the codec
 
 ---
 
@@ -119,20 +132,24 @@ public class ExamplePlugin extends JavaPlugin {
         return this.config.get().getLuckIncreaseChance();
     }
 }
+
 ```
 
 ### Configuration File Location:
 
 The config file will be generated at:
+
 ```bash
 plugins/com.yourgroup_YourPluginName/ExamplePlugin.example.json
+
 ```
 
 **Format:** `{Group}_{Name}/{ConfigName}.example.json`
 
 Where:
-- `Group` and `Name` come from your plugin's `manifest.json`
-- `ConfigName` is the first parameter to `withConfig()`
+
+* `Group` and `Name` come from your plugin's `manifest.json`
+* `ConfigName` is the first parameter to `withConfig()`
 
 ---
 
@@ -184,6 +201,7 @@ public class AdvancedConfig {
     public String getServerMessage() { return serverMessage; }
     public boolean isEnableFeature() { return enableFeature; }
 }
+
 ```
 
 ---
@@ -191,7 +209,7 @@ public class AdvancedConfig {
 ## Common Codec Types
 
 | Java Type | Codec | Example Value |
-|-----------|-------|---------------|
+| --- | --- | --- |
 | `Double` | `Codec.DOUBLE` | `0.40` |
 | `Integer` | `Codec.INT` | `100` |
 | `String` | `Codec.STRING` | `"Hello"` |
@@ -212,6 +230,7 @@ When your plugin runs, it generates a JSON file like this:
   "ServerMessage": "Welcome!",
   "EnableFeature": true
 }
+
 ```
 
 Users can edit this file to customize settings, and changes take effect on plugin reload or server restart.
@@ -242,6 +261,7 @@ public class ExamplePlugin extends JavaPlugin {
         }
     }
 }
+
 ```
 
 ### From Other Classes:
@@ -263,6 +283,7 @@ public class FeatureManager {
         }
     }
 }
+
 ```
 
 ```java
@@ -270,6 +291,7 @@ public class FeatureManager {
 FeatureManager manager = new FeatureManager(
     this.config.get().getLuckIncreaseChance()
 );
+
 ```
 
 ---
@@ -285,6 +307,7 @@ For more complex configs with lists or objects, you can use advanced codecs:
         (config, value, info) -> config.allowedItems = value,
         (config, info) -> config.allowedItems)
 .add()
+
 ```
 
 ---
@@ -302,6 +325,7 @@ public void reloadConfig() {
     double newChance = this.config.get().getLuckIncreaseChance();
     getLogger().info("New luck chance: " + newChance);
 }
+
 ```
 
 ---
@@ -309,26 +333,34 @@ public void reloadConfig() {
 ## Best Practices
 
 ### 1. Use Sensible Defaults
+
 ```java
 private double luckIncreaseChance = 0.40;  // 40% - balanced default
+
 ```
 
 ### 2. Document Your Config
+
 Add comments in your code explaining what each setting does:
+
 ```java
 // Percentage chance (0.0 to 1.0) for luck increase events
 private double luckIncreaseChance = 0.40;
+
 ```
 
 ### 3. Validate Values
+
 ```java
 public double getLuckIncreaseChance() {
     // Ensure value is between 0 and 1
     return Math.max(0.0, Math.min(1.0, luckIncreaseChance));
 }
+
 ```
 
 ### 4. Provide Examples
+
 Include an example config in your documentation showing all available options.
 
 ---
@@ -336,24 +368,28 @@ Include an example config in your documentation showing all available options.
 ## Troubleshooting
 
 ### Config file not generated:
-- Verify `withConfig()` is called in plugin constructor
-- Check plugin manifest is correct
-- Ensure plugin loads successfully (check logs)
+
+* Verify `withConfig()` is called in plugin constructor
+* Check plugin manifest is correct
+* Ensure plugin loads successfully (check logs)
 
 ### Values not loading:
-- Verify JSON syntax is valid
-- Check key names match exactly (case-sensitive)
-- Ensure data types match codec definitions
+
+* Verify JSON syntax is valid
+* Check key names match exactly (case-sensitive)
+* Ensure data types match codec definitions
 
 ### Changes not taking effect:
-- Restart the server after editing config
-- If using reload, ensure reload method is properly implemented
-- Check for cached values
+
+* Restart the server after editing config
+* If using reload, ensure reload method is properly implemented
+* Check for cached values
 
 ### Default values not working:
-- Verify field initialization: `private double value = 0.40;`
-- Check constructor doesn't override defaults
-- Ensure codec is built correctly
+
+* Verify field initialization: `private double value = 0.40;`
+* Check constructor doesn't override defaults
+* Ensure codec is built correctly
 
 ---
 
@@ -408,6 +444,7 @@ public class MyPlugin extends JavaPlugin {
             config.get().isDebugMode());
     }
 }
+
 ```
 
 ---
@@ -415,7 +452,6 @@ public class MyPlugin extends JavaPlugin {
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
 
-
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)

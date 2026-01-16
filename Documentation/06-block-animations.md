@@ -1,6 +1,7 @@
 ﻿# Block Animations
 
-**Source:** [Block Animations](https://hytale.com/)  
+**Source:** [Block Animations](https://hytale.com/)
+
 **Last Modified:** Friday, January 9, 2026 at 12:01 PM
 
 ---
@@ -13,20 +14,21 @@ This guide explains how to add animations to blocks in Hytale. Animations can ma
 
 ## Prerequisites
 
-- Basic understanding of block states (see "Block State Changing" guide)
-- Blockbench installed ([https://www.blockbench.net/](https://www.blockbench.net/))
-- A block model with named groups
+* Basic understanding of block states (see "Block State Changing" guide)
+* Blockbench installed ([https://www.blockbench.net/](https://www.blockbench.net/))
+* A block model with named groups
 
 ---
 
 ## What Can Be Animated?
 
 Block animations can modify:
-- **Position** - Move elements in X, Y, Z coordinates
-- **Orientation** - Rotate elements
-- **ShapeStretch** - Stretch or scale elements
-- **ShapeVisible** - Show or hide elements
-- **ShapeUvOffset** - Animate textures (advanced)
+
+* **Position** - Move elements in X, Y, Z coordinates
+* **Orientation** - Rotate elements
+* **ShapeStretch** - Stretch or scale elements
+* **ShapeVisible** - Show or hide elements
+* **ShapeUvOffset** - Animate textures (advanced)
 
 ---
 
@@ -45,6 +47,7 @@ First, reference your animation file in the block's state definition:
     }
   }
 }
+
 ```
 
 ---
@@ -54,17 +57,21 @@ First, reference your animation file in the block's state definition:
 Open your block model in Blockbench:
 
 1. **Create a Group:**
-   - In Blockbench, create a new group
-   - Give it a descriptive name (e.g., "Water", "Door", "Drawer")
-   - This group name will be referenced in your animation file
+* In Blockbench, create a new group
+* Give it a descriptive name (e.g., "Water", "Door", "Drawer")
+* This group name will be referenced in your animation file
+
 
 2. **Add Elements:**
-   - Place the elements you want to animate inside the group
-   - You can have multiple elements in one group
-   - All elements in the group will animate together
+* Place the elements you want to animate inside the group
+* You can have multiple elements in one group
+* All elements in the group will animate together
+
 
 3. **Export:**
-   - Export as `.blockymodel` format for Hytale
+* Export as `.blockymodel` format for Hytale
+
+
 
 ---
 
@@ -91,12 +98,13 @@ Create a `.blockyanim` file in your Pack's animation folder:
     }
   }
 }
+
 ```
 
 ### Animation Properties:
 
 | Property | Description | Example |
-|----------|-------------|---------|
+| --- | --- | --- |
 | `formatVersion` | Animation format version | `1` |
 | `duration` | Animation length in ticks | `50` (2.5 seconds) |
 | `holdLastKeyframe` | Whether to hold at final position | `true` or `false` |
@@ -131,6 +139,7 @@ Moves elements in 3D space:
     "interpolationType": "smooth"
   }
 ]
+
 ```
 
 **This example:** Moves the element 8.5 units up on the Y-axis over 50 ticks.
@@ -162,12 +171,14 @@ Rotates elements using quaternions:
     "interpolationType": "smooth"
   }
 ]
+
 ```
 
 **Note:** Quaternions are complex. Common rotation values:
-- **No rotation:** `{x:0, y:0, z:0, w:1}`
-- **90Â° Y-axis:** `{x:0, y:0.707, z:0, w:0.707}`
-- **180Â° Y-axis:** `{x:0, y:1, z:0, w:0}`
+
+* **No rotation:** `{x:0, y:0, z:0, w:1}`
+* **90° Y-axis:** `{x:0, y:0.707, z:0, w:0.707}`
+* **180° Y-axis:** `{x:0, y:1, z:0, w:0}`
 
 ---
 
@@ -211,6 +222,7 @@ This animation makes water rise from 0 to 8.5 units upward:
     }
   }
 }
+
 ```
 
 ---
@@ -331,14 +343,15 @@ A complex example with multiple animated groups (doors, knockers, drawer):
     }
   }
 }
+
 ```
 
 ### Breakdown of Wardrobe Animation:
 
-- **Door-L:** Left door swings open (rotates on Y-axis)
-- **Door-R:** Right door swings open (opposite direction)
-- **Drawer:** Pulls out (moves on Z-axis)
-- **Door-Knocker:** Bounces back and forth (multiple rotation keyframes)
+* **Door-L:** Left door swings open (rotates on Y-axis)
+* **Door-R:** Right door swings open (opposite direction)
+* **Drawer:** Pulls out (moves on Z-axis)
+* **Door-Knocker:** Bounces back and forth (multiple rotation keyframes)
 
 ---
 
@@ -347,16 +360,16 @@ A complex example with multiple animated groups (doors, knockers, drawer):
 Each keyframe contains:
 
 | Property | Description |
-|----------|-------------|
+| --- | --- |
 | `time` | When this keyframe occurs (in ticks) |
 | `delta` | The transformation values |
 | `interpolationType` | How to transition (`"smooth"`, `"linear"`, `"step"`) |
 
 ### Interpolation Types:
 
-- **smooth:** Gradual acceleration/deceleration (natural)
-- **linear:** Constant speed (mechanical)
-- **step:** Instant change (no interpolation)
+* **smooth:** Gradual acceleration/deceleration (natural)
+* **linear:** Constant speed (mechanical)
+* **step:** Instant change (no interpolation)
 
 ---
 
@@ -377,6 +390,7 @@ YourPackName/
     `-- Item/
         `-- Items/
             `-- your_block.json
+
 ```
 
 ---
@@ -405,23 +419,27 @@ YourPackName/
 ## Troubleshooting
 
 ### Animation doesn't play:
-- Verify animation file path in block JSON
-- Check that group names match exactly (case-sensitive)
-- Ensure `.blockyanim` extension is correct
+
+* Verify animation file path in block JSON
+* Check that group names match exactly (case-sensitive)
+* Ensure `.blockyanim` extension is correct
 
 ### Animation is choppy:
-- Increase duration for smoother movement
-- Use "smooth" interpolation instead of "linear"
-- Add more intermediate keyframes
+
+* Increase duration for smoother movement
+* Use "smooth" interpolation instead of "linear"
+* Add more intermediate keyframes
 
 ### Wrong elements animate:
-- Check group names in Blockbench
-- Verify correct elements are in the group
-- Ensure animation references the right group name
+
+* Check group names in Blockbench
+* Verify correct elements are in the group
+* Ensure animation references the right group name
 
 ### Animation plays backwards:
-- Check time values increase correctly
-- Verify keyframes are in chronological order
+
+* Check time values increase correctly
+* Verify keyframes are in chronological order
 
 ---
 
@@ -432,17 +450,17 @@ To learn more, examine vanilla Hytale animations:
 **Path:** `Assets/Common/Blocks/Animations/`
 
 Look at:
-- Door animations
-- Chest animations
-- Wardrobe animations
-- Machine animations
+
+* Door animations
+* Chest animations
+* Wardrobe animations
+* Machine animations
 
 ---
 
 ## Getting Help
 
 **Official Channels:**
-- **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
-- **Blog:** [Hytale News](https://hytale.com/news)
 
-
+* **Discord:** [Official Hytale Discord](https://discord.gg/hytale)
+* **Blog:** [Hytale News](https://hytale.com/news)
