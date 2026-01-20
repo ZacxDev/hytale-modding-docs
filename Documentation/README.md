@@ -1,5 +1,13 @@
 # Hytale Modding Documentation
 
+## 🤝 Official Partner & Sponsor
+**[Hytale Creators](https://hytalecreators.net)** is a proud partner of this documentation project. We are working together to build a valuable ecosystem for the Hytale modding community through educational content, technical guides, and blog resources.
+
+* **Website:** [hytalecreators.net](https://hytalecreators.net)
+* **Community:** [Join the Hytale Creators Discord](https://discord.com/invite/WBspAsKvPZ)
+
+---
+
 **Compiled:** January 16, 2026
 **Status:** Hytale is currently in Early Access
 **Official Reference:** [Hytale Modding Strategy and Status](https://hytale.com/news/2025/11/hytale-modding-strategy-and-status)
