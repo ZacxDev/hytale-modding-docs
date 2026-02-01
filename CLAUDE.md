@@ -15,6 +15,12 @@ Community-maintained documentation for Hytale modding, hosted on [GitBook](https
 ## Project Structure
 
 ```
+.claude-plugin/
+├── plugin.json          # Plugin manifest (name, version, author)
+└── marketplace.json     # Marketplace catalog for installation
+skills/
+└── hytale-docs/
+    └── SKILL.md         # Documentation maintenance skill
 HYTALE_MODDING.md        # Comprehensive API reference (62K lines)
 Documentation/           # All markdown documentation files
 ├── README.md           # Main entry point and overview
@@ -25,6 +31,19 @@ Documentation/           # All markdown documentation files
 └── CHANGELOG.md        # Version history
 scripts/
 └── generate-llms-txt.js  # Generates llms.txt for AI consumption
+```
+
+## Claude Code Plugin Installation
+
+```bash
+# Add marketplace and install
+/plugin marketplace add ZacxDev/hytale-modding-docs
+/plugin install hytale-modding-docs@zacxdev-hytale-modding-docs
+
+# Use the skill
+/hytale-modding-docs:hytale-docs reference <topic>
+/hytale-modding-docs:hytale-docs update <topic>
+/hytale-modding-docs:hytale-docs add <title>
 ```
 
 ## Commands

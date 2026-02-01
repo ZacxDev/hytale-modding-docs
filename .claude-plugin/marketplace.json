@@ -1,0 +1,20 @@
+{
+  "name": "zacxdev-hytale-modding-docs",
+  "owner": {
+    "name": "Zacx",
+    "email": "zacxdev@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "hytale-modding-docs",
+      "description": "Hytale modding documentation and maintenance tools. Reference, update, and create documentation for Hytale server plugins.",
+      "version": "1.0.0",
+      "source": ".",
+      "author": {
+        "name": "Zacx"
+      },
+      "homepage": "https://github.com/ZacxDev/hytale-modding-docs",
+      "license": "MIT"
+    }
+  ]
+}

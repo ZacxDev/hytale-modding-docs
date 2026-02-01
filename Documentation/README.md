@@ -27,6 +27,35 @@ Hytale is currently in **Early Access**. This documentation is based on official
 > *"We're building Hytale with modding at its core. Most of what you see in the game can be changed, extended, or removed entirely."* - Slikey (Technical Director)
 
 if you need further help, feel free to join my [Discord](https://discord.gg/gCRv62araB), and write a message to @Britakee
+
+---
+
+## Claude Code Plugin
+
+This repository is also a **Claude Code plugin** for AI-assisted documentation maintenance.
+
+### Installation
+
+```bash
+# Add the marketplace
+/plugin marketplace add ZacxDev/hytale-modding-docs
+
+# Install the plugin
+/plugin install hytale-modding-docs@zacxdev-hytale-modding-docs
+```
+
+### Usage
+
+Once installed, use the `/hytale-modding-docs:hytale-docs` skill:
+
+| Command | Description |
+|---------|-------------|
+| `/hytale-modding-docs:hytale-docs reference <topic>` | Search docs for API information |
+| `/hytale-modding-docs:hytale-docs update <topic>` | Add newly discovered facts |
+| `/hytale-modding-docs:hytale-docs add <title>` | Create new documentation page |
+
+The skill also auto-activates when discussing Hytale modding documentation.
+
 ---
 
 ## Table of Contents

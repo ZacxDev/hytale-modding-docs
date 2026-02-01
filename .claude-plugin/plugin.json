@@ -1,0 +1,12 @@
+{
+  "name": "hytale-modding-docs",
+  "description": "Hytale modding documentation and maintenance tools. Provides skills for referencing, updating, and creating Hytale server plugin documentation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Zacx",
+    "email": "zacxdev@gmail.com"
+  },
+  "homepage": "https://github.com/ZacxDev/hytale-modding-docs",
+  "repository": "https://github.com/ZacxDev/hytale-modding-docs",
+  "license": "MIT"
+}
