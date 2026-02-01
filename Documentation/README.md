@@ -90,6 +90,8 @@ Ready-to-use plugin template with modern build tools and CI/CD.
 
 * **[Useful Tools & Links](10-useful-tools-and-links.md)** ⭐
 * **[World Generation Modding](16-world-generation-modding.md)** 🌍
+* **[Server API Reference](25-server-api-reference.md)** 📚
+Comprehensive API reference: Universe, ECS, Time, Tasks, Messages, Events, and built-in modules.
 
 ---
 
