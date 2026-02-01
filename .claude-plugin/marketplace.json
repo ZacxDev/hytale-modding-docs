@@ -9,10 +9,7 @@
       "name": "hytale-modding-docs",
       "description": "Hytale modding documentation and maintenance tools. Reference, update, and create documentation for Hytale server plugins.",
       "version": "1.0.0",
-      "source": {
-        "type": "github",
-        "repo": "ZacxDev/hytale-modding-docs"
-      },
+      "source": "./",
       "author": {
         "name": "Zacx"
       },
